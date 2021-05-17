@@ -1,0 +1,93 @@
+@import 'utils/variable';
+@import 'utils/placeholder';
+@import "Layout/header";
+
+body {
+    width: 400px;
+    margin: auto;
+    padding: 0;
+    font-family: $font-roboto;
+}
+
+.localisation{
+    height: 3.125rem;
+    background-color:#EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .localisation-icon{
+         padding-right: $padding-icon;
+    }
+}
+
+.description{
+    height: 290px;
+    background: $background-main;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center; 
+
+    .description-h1{
+        text-align: $text-align;
+        margin: 0px;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .description-words{
+        text-align: $text-align;
+        margin-bottom: 30px;
+    }
+    .description-button{
+        width: 220px;
+        height: 50px;
+        border-radius: 2rem;
+        background-color: $primary;
+        border:1px solid $primary;
+        box-shadow: $btn-shadow;
+        text-align: $text-align;
+        color: #fff;
+        transform: translateX(90px);
+
+        &:hover{
+            border-color: $primary-light;
+            background-color: $primary-light;
+        }
+    }
+}
+
+.fonction{
+    height: 440px;
+    .title-fonction{
+        padding-left: $padding-icon;
+        margin-top: 0px;
+        margin-bottom: 2.2rem;
+        padding-top: 3.5rem;
+    }
+    .fonction-button{
+        @extend %btn-p1;
+        &:hover{
+            border-color: #F5EDFF;
+            background-color: lighten(#F5EDFF , 0);           
+        }
+        span{
+            @extend %span;
+        }
+
+        .fonction-icon{
+            padding-right: $padding-icon;
+            &:hover{
+                color: $primary;
+            }
+        }
+        .fonction-p{
+            margin: 0px;
+        }
+
+    }
+}
+
+.charters{
+    background: grey;
+    height: 200px;
+}

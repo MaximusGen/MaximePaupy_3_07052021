@@ -1,0 +1,12 @@
+.topbar {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 1px #CECECE;
+    
+    .topbar-image{
+        width: 165px;
+        height: 30px;
+    }
+}
