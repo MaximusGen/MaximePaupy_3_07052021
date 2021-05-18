@@ -179,4 +179,103 @@ body {
   text-decoration: none;
   color: #fff;
 }
+
+.restaurant {
+  background: #F6F6F6;
+  height: 1225px;
+}
+
+.restaurant .restaurant-title {
+  margin: 0px;
+  padding-top: 60px;
+  padding-left: 30px;
+}
+
+.restaurant .restaurant-card-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+.restaurant .restaurant-card-flex a {
+  text-decoration: none;
+}
+
+.restaurant .restaurant-card-buble-new,
+.restaurant .restaurant-card-buble-new2 {
+  width: 80px;
+  height: 30px;
+  background-color: #99E2D0;
+  text-align: center;
+  -webkit-transform: translate(270px, 30px);
+          transform: translate(270px, 30px);
+}
+
+.restaurant .restaurant-card-buble-new .buble-new-line,
+.restaurant .restaurant-card-buble-new .buble-new-line2,
+.restaurant .restaurant-card-buble-new2 .buble-new-line,
+.restaurant .restaurant-card-buble-new2 .buble-new-line2 {
+  color: #008766;
+  padding: 5px 0px;
+  font-weight: bold;
+}
+
+.restaurant .restaurant-card {
+  width: 335px;
+  height: 255px;
+  background-color: #fff;
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 5px 5px #CDCDCD;
+          box-shadow: 5px 5px 5px #CDCDCD;
+  margin-bottom: 20px;
+}
+
+.restaurant .restaurant-card:hover {
+  -webkit-box-shadow: 10px 10px 10px #CDCDCD;
+          box-shadow: 10px 10px 10px #CDCDCD;
+}
+
+.restaurant .restaurant-card .restaurant-card-image {
+  width: 335px;
+  height: 175px;
+  border-radius: 25px 25px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.restaurant .restaurant-card .lines-card {
+  text-decoration: none;
+  margin: 0px;
+  padding: 10px 20px 0px;
+}
+
+.restaurant .restaurant-card .restaurant-card-title {
+  color: #000;
+}
+
+.restaurant .restaurant-card .restaurant-card-localisation {
+  color: #353535;
+}
+
+.restaurant .restaurant-card-buble-new2 {
+  -webkit-transform: translate(110px, 30px);
+          transform: translate(110px, 30px);
+}
+
+.restaurant .restaurant-card-buble-new2 .buble-new-line2 {
+  margin: 0px;
+}
+
+.restaurant .card-marg {
+  margin-top: -20px;
+}
 /*# sourceMappingURL=styles.css.map */
