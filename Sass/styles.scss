@@ -1,6 +1,7 @@
 @import 'utils/variable';
 @import 'utils/placeholder';
 @import "Layout/header";
+@import 'Layout/footer';
 
 body {
     width: 400px;
@@ -85,9 +86,4 @@ body {
         }
 
     }
-}
-
-.charters{
-    background: grey;
-    height: 200px;
 }

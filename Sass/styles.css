@@ -45,6 +45,36 @@
   height: 30px;
 }
 
+.charters {
+  background: #353535;
+  height: 200px;
+  color: #fff;
+}
+
+.charters .charters-title {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 19px;
+  margin: 0px 0px 15px 30px;
+  padding-top: 20px;
+}
+
+.charters .charters-line {
+  margin: 0px 0px 10px 30px;
+}
+
+.charters .charters-line-icon {
+  padding-right: 20px;
+}
+
+.charters .charters-line-icon1 {
+  padding-right: 13px;
+}
+
+.charters .charters-line a {
+  text-decoration: none;
+  color: #fff;
+}
+
 body {
   width: 400px;
   margin: auto;
@@ -142,10 +172,5 @@ body {
 
 .fonction .fonction-button .fonction-p {
   margin: 0px;
-}
-
-.charters {
-  background: grey;
-  height: 200px;
 }
 /*# sourceMappingURL=styles.css.map */
