@@ -26,13 +26,13 @@
     .description-words{
         text-align: $text-align;
         margin-bottom: 30px;
+        color: #353535;
     }
     .description-button{
         width: 220px;
         height: 50px;
         border-radius: 2rem;
-        background-color: $primary;
-        border:1px solid $primary;
+        background: linear-gradient(#FF79DA ,#9356DC);
         box-shadow: $btn-shadow;
         text-align: $text-align;
         color: #fff;
@@ -41,6 +41,7 @@
         &:hover{
             border-color: $primary-light;
             background-color: $primary-light;
+            box-shadow: 10px 10px 10px #CDCDCD;
         }
     }
 }
@@ -57,7 +58,12 @@
         @extend %btn-p1;
         &:hover{
             border-color: #F5EDFF;
-            background-color: lighten(#F5EDFF , 0);           
+            background-color: lighten(#F5EDFF , 0);
+            box-shadow: 10px 10px 10px #CDCDCD;
+            
+            .fonction-icon{
+                color: $primary
+            }
         }
         span{
             @extend %span;
@@ -65,12 +71,10 @@
 
         .fonction-icon{
             padding-right: $padding-icon;
-            &:hover{
-                color: $primary;
-            }
         }
         .fonction-p{
             margin: 0px;
+            padding: 2.5px 0px;
         }
 
     }
