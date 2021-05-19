@@ -1,9 +1,11 @@
 @import 'utils/variable';
+@import 'utils/mixins';
 @import 'utils/placeholder';
 @import 'Layout/body';
 @import 'Layout/header';
 @import 'Layout/main-p1';
 @import 'Layout/footer';
+<<<<<<< HEAD
 
 .restaurant {
 	background: $background-main;
@@ -78,3 +80,5 @@
 		margin-top: -20px;
 	}
 }
+=======
+>>>>>>> P3#2

@@ -1,9 +1,7 @@
 .localisation{
     height: 3.125rem;
     background-color:#EAEAEA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 
     .localisation-icon{
          padding-right: $padding-icon;
@@ -13,35 +11,32 @@
 .description{
     height: 290px;
     background: $background-main;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center; 
+    @include flex-center;
 
     .description-h1{
         text-align: $text-align;
-        margin: 0px;
-        font-size: 22px;
-        margin-bottom: 20px;
+        margin: 0rem;
+        font-size: 1.375rem;
+        margin-bottom: 1.25rem;
     }
     .description-words{
         text-align: $text-align;
-        margin-bottom: 30px;
-        color: #353535;
+        margin-bottom: 1.875rem;
+        color: $color-fonts;
     }
     .description-button{
         width: 220px;
         height: 50px;
         border-radius: 2rem;
-        background: linear-gradient(#FF79DA ,#9356DC);
+        background: $gradient;
         box-shadow: $btn-shadow;
         text-align: $text-align;
         color: #fff;
-        transform: translateX(90px);
 
         &:hover{
-            border-color: $primary-light;
-            background-color: $primary-light;
-            box-shadow: 10px 10px 10px #CDCDCD;
+            border-color: $color-primary-light;
+            background-color: $color-primary-light;
+            box-shadow: $btn-shadow-hover;
         }
     }
 }
@@ -50,7 +45,7 @@
     height: 440px;
     .title-fonction{
         padding-left: $padding-icon;
-        margin-top: 0px;
+        margin-top: 0rem;
         margin-bottom: 2.2rem;
         padding-top: 3.5rem;
     }
@@ -59,10 +54,10 @@
         &:hover{
             border-color: #F5EDFF;
             background-color: lighten(#F5EDFF , 0);
-            box-shadow: 10px 10px 10px #CDCDCD;
+            box-shadow: $btn-shadow-hover;
             
             .fonction-icon{
-                color: $primary
+                color: $color-primary
             }
         }
         span{
@@ -73,9 +68,103 @@
             padding-right: $padding-icon;
         }
         .fonction-p{
-            margin: 0px;
-            padding: 2.5px 0px;
+            margin: 0rem;
+            padding: 0.125rem 0rem;
         }
 
     }
+}
+
+.restaurant
+{
+  background: #F6F6F6;
+  height: 1225px;
+
+    .restaurant-title{
+        margin: 0rem;
+        padding-top: 3.75rem;
+        padding-left: 1.875rem;
+    }
+    .restaurant-card-buble-new,.restaurant-card-buble-new2{
+        width: 80px;
+        height: 30px;
+        background-color: $color-tertiary;
+        text-align: center;
+        transform: translate(270px, 30px);
+        .buble-new-line,.buble-new-line2{
+            color: #008766;
+            padding: 5px 0px;
+            font-weight: bold;
+        }
+    }
+    .restaurant-card-buble-new2{
+        transform: translate(100px,30px);
+        .buble-new-line2{
+            margin: 0rem;
+        }
+    }
+    .restaurant-card-flex{
+        @include flex-center;
+         flex-flow: column wrap;
+         margin-top: -1.25rem;
+
+        .restaurant-card{
+            width: 335px;
+            height: 255px;
+            background-color: #fff;
+            border-radius: 25px;
+            box-shadow: $btn-shadow;
+            margin-bottom: 1.25rem;
+
+                .restaurant-card-image{
+                   width: 335px;
+                   height: 175px;
+                   border-radius: 25px 25px 0px 0px;
+                   object-fit: cover;
+                }
+                .lines-card{
+                   margin: 0rem;
+                   padding: 0.625rem 1.25rem 0rem;
+                }
+                .restaurant-card-title{
+                   color: #000;
+                }
+            
+                .restaurant-card-localisation{
+                  color: #353535;
+                }
+                .heart{
+                  width: 30px;
+                  stroke-width: 30;
+                  stroke: black;
+                  fill: white;
+                  cursor: pointer;
+                  transform: translate(270px,-40px);
+                }
+                .heart-full{
+                  position: absolute;
+                  fill: url(#text-fill);
+                  stroke: none;
+                }
+                .heart-empty {
+                  width: 30px;
+                  position: relative; 
+                  &:hover {
+                  opacity: 0;
+                  transition: 0.5s;
+                  }
+                }
+
+        }
+        .restaurant-card:hover{
+            box-shadow: $btn-shadow-hover;
+        }
+    }
+    .restaurant-card-flex a{
+        text-decoration: none;
+    }
+    .card-marg{
+        margin-top: -1.875rem;
+    }
+
 }
