@@ -3,13 +3,13 @@
   height: 75px;
   border: 1px solid #F6F6F6;
   border-radius: 1.25rem;
-  -webkit-box-shadow: 5px 5px 5px #CDCDCD;
-          box-shadow: 5px 5px 5px #CDCDCD;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem #CDCDCD;
+          box-shadow: 0.3rem 0.3rem 0.3rem #CDCDCD;
   background-color: #F6F6F6;
   text-align: center;
   -webkit-transform: translateX(2.5rem);
           transform: translateX(2.5rem);
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   font-weight: bold;
 }
 
@@ -37,14 +37,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0px 5px 1px #CECECE;
-          box-shadow: 0px 5px 1px #CECECE;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem #CDCDCD;
+          box-shadow: 0.3rem 0.3rem 0.3rem #CDCDCD;
 }
 
 .topbar .topbar-image {
@@ -58,16 +62,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
 }
 
 .localisation .localisation-icon {
-  padding-right: 20px;
+  padding-right: 1.25rem;
 }
 
 .description {
@@ -76,25 +84,28 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .description .description-h1 {
   text-align: center;
-  margin: 0px;
-  font-size: 22px;
-  margin-bottom: 20px;
+  margin: 0rem;
+  font-size: 1.375rem;
+  margin-bottom: 1.25rem;
 }
 
 .description .description-words {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   color: #353535;
 }
 
@@ -102,21 +113,19 @@ body {
   width: 220px;
   height: 50px;
   border-radius: 2rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-box-shadow: 5px 5px 5px #CDCDCD;
-          box-shadow: 5px 5px 5px #CDCDCD;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem #CDCDCD;
+          box-shadow: 0.3rem 0.3rem 0.3rem #CDCDCD;
   text-align: center;
   color: #fff;
-  -webkit-transform: translateX(90px);
-          transform: translateX(90px);
 }
 
 .description .description-button:hover {
   border-color: #c9abee;
   background-color: #c9abee;
-  -webkit-box-shadow: 10px 10px 10px #CDCDCD;
-          box-shadow: 10px 10px 10px #CDCDCD;
+  -webkit-box-shadow: 0.6rem 0.6rem 0.6rem #CDCDCD;
+          box-shadow: 0.6rem 0.6rem 0.6rem #CDCDCD;
 }
 
 .fonction {
@@ -124,8 +133,8 @@ body {
 }
 
 .fonction .title-fonction {
-  padding-left: 20px;
-  margin-top: 0px;
+  padding-left: 1.25rem;
+  margin-top: 0rem;
   margin-bottom: 2.2rem;
   padding-top: 3.5rem;
 }
@@ -133,8 +142,8 @@ body {
 .fonction .fonction-button:hover {
   border-color: #F5EDFF;
   background-color: #f5edff;
-  -webkit-box-shadow: 10px 10px 10px #CDCDCD;
-          box-shadow: 10px 10px 10px #CDCDCD;
+  -webkit-box-shadow: 0.6rem 0.6rem 0.6rem #CDCDCD;
+          box-shadow: 0.6rem 0.6rem 0.6rem #CDCDCD;
 }
 
 .fonction .fonction-button:hover .fonction-icon {
@@ -142,42 +151,12 @@ body {
 }
 
 .fonction .fonction-button .fonction-icon {
-  padding-right: 20px;
+  padding-right: 1.25rem;
 }
 
 .fonction .fonction-button .fonction-p {
-  margin: 0px;
-  padding: 2.5px 0px;
-}
-
-.charters {
-  background: #353535;
-  height: 200px;
-  color: #fff;
-}
-
-.charters .charters-title {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 19px;
-  margin: 0px 0px 15px 30px;
-  padding-top: 20px;
-}
-
-.charters .charters-line {
-  margin: 0px 0px 10px 30px;
-}
-
-.charters .charters-line-icon {
-  padding-right: 20px;
-}
-
-.charters .charters-line-icon1 {
-  padding-right: 13px;
-}
-
-.charters .charters-line a {
-  text-decoration: none;
-  color: #fff;
+  margin: 0rem;
+  padding: 0.125rem 0rem;
 }
 
 .restaurant {
@@ -186,9 +165,9 @@ body {
 }
 
 .restaurant .restaurant-title {
-  margin: 0px;
-  padding-top: 60px;
-  padding-left: 30px;
+  margin: 0rem;
+  padding-top: 3.75rem;
+  padding-left: 1.875rem;
 }
 
 .restaurant .restaurant-card-buble-new, .restaurant .restaurant-card-buble-new2 {
@@ -212,21 +191,25 @@ body {
 }
 
 .restaurant .restaurant-card-buble-new2 .buble-new-line2 {
-  margin: 0px;
+  margin: 0rem;
 }
 
 .restaurant .restaurant-card-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: -20px;
+  flex-flow: column wrap;
+  margin-top: -1.25rem;
 }
 
 .restaurant .restaurant-card-flex .restaurant-card {
@@ -234,9 +217,9 @@ body {
   height: 255px;
   background-color: #fff;
   border-radius: 25px;
-  -webkit-box-shadow: 5px 5px 5px #CDCDCD;
-          box-shadow: 5px 5px 5px #CDCDCD;
-  margin-bottom: 20px;
+  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem #CDCDCD;
+          box-shadow: 0.3rem 0.3rem 0.3rem #CDCDCD;
+  margin-bottom: 1.25rem;
 }
 
 .restaurant .restaurant-card-flex .restaurant-card .restaurant-card-image {
@@ -248,8 +231,8 @@ body {
 }
 
 .restaurant .restaurant-card-flex .restaurant-card .lines-card {
-  margin: 0px;
-  padding: 10px 20px 0px;
+  margin: 0rem;
+  padding: 0.625rem 1.25rem 0rem;
 }
 
 .restaurant .restaurant-card-flex .restaurant-card .restaurant-card-title {
@@ -260,9 +243,36 @@ body {
   color: #353535;
 }
 
+.restaurant .restaurant-card-flex .restaurant-card .heart {
+  width: 30px;
+  stroke-width: 30;
+  stroke: black;
+  fill: white;
+  cursor: pointer;
+  -webkit-transform: translate(270px, -40px);
+          transform: translate(270px, -40px);
+}
+
+.restaurant .restaurant-card-flex .restaurant-card .heart-full {
+  position: absolute;
+  fill: url(#text-fill);
+  stroke: none;
+}
+
+.restaurant .restaurant-card-flex .restaurant-card .heart-empty {
+  width: 30px;
+  position: relative;
+}
+
+.restaurant .restaurant-card-flex .restaurant-card .heart-empty:hover {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .restaurant .restaurant-card-flex .restaurant-card:hover {
-  -webkit-box-shadow: 10px 10px 10px #CDCDCD;
-          box-shadow: 10px 10px 10px #CDCDCD;
+  -webkit-box-shadow: 0.6rem 0.6rem 0.6rem #CDCDCD;
+          box-shadow: 0.6rem 0.6rem 0.6rem #CDCDCD;
 }
 
 .restaurant .restaurant-card-flex a {
@@ -270,6 +280,36 @@ body {
 }
 
 .restaurant .card-marg {
-  margin-top: -20px;
+  margin-top: -1.875rem;
+}
+
+.charters {
+  background: #353535;
+  height: 200px;
+  color: #fff;
+}
+
+.charters .charters-title {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 19px;
+  margin: 0px 0px 15px 30px;
+  padding-top: 20px;
+}
+
+.charters .charters-line {
+  margin: 0px 0px 10px 30px;
+}
+
+.charters .charters-line-icon {
+  padding-right: 1.25rem;
+}
+
+.charters .charters-line-icon1 {
+  padding-right: 13px;
+}
+
+.charters .charters-line a {
+  text-decoration: none;
+  color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */

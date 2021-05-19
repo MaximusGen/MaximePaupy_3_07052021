@@ -1,10 +1,12 @@
 //Color
 
-$primary: #9356DC;
-$primary-light: lighten(#9356DC, 20%);
-$secondary: #FF79DA;
-$tertiary: #99E2D0;
+$color-primary: #9356DC;
+$color-primary-light: lighten(#9356DC, 20%);
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-fonts: #353535;
 $background-main:#F6F6F6;
+$gradient : linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
 
 //Police
 
@@ -14,9 +16,9 @@ $font-Shrikhand:'Shrikhand', sans-serif;
 
 //Padding
  
-$padding-icon: 20px;
+$padding-icon: 1.25rem;
 
 //Box-Shadow
 
-$btn-shadow:5px 5px 5px #CDCDCD;
-$btn-shadow-hover: 10px 10px 10px #CDCDCD;
+$btn-shadow:0.3rem 0.3rem 0.3rem #CDCDCD;
+$btn-shadow-hover: 0.6rem 0.6rem 0.6rem #CDCDCD;
