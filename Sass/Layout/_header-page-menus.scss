@@ -1,0 +1,20 @@
+.topbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+
+    &_icon{
+        color: #000;
+    }
+    &_image{
+        width: 165px;
+        height: 30px;
+        padding-right: 120px;
+    }
+    &_restaurant-image{
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+}

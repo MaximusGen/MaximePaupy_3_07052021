@@ -3,8 +3,8 @@
   height: 75px;
   border: 1px solid #F6F6F6;
   border-radius: 1.25rem;
-  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem #CDCDCD;
-          box-shadow: 0.3rem 0.3rem 0.3rem #CDCDCD;
+  -webkit-box-shadow: 5px 5px 5px #CDCDCD;
+          box-shadow: 5px 5px 5px #CDCDCD;
   background-color: #F6F6F6;
   text-align: center;
   -webkit-transform: translateX(2.5rem);
@@ -47,8 +47,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem #CDCDCD;
-          box-shadow: 0.3rem 0.3rem 0.3rem #CDCDCD;
+  -webkit-box-shadow: 5px 5px 5px #CDCDCD;
+          box-shadow: 5px 5px 5px #CDCDCD;
 }
 
 .topbar .topbar-image {
@@ -115,8 +115,8 @@ body {
   border-radius: 2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem #CDCDCD;
-          box-shadow: 0.3rem 0.3rem 0.3rem #CDCDCD;
+  -webkit-box-shadow: 5px 5px 5px #CDCDCD;
+          box-shadow: 5px 5px 5px #CDCDCD;
   text-align: center;
   color: #fff;
 }
@@ -124,8 +124,8 @@ body {
 .description .description-button:hover {
   border-color: #c9abee;
   background-color: #c9abee;
-  -webkit-box-shadow: 0.6rem 0.6rem 0.6rem #CDCDCD;
-          box-shadow: 0.6rem 0.6rem 0.6rem #CDCDCD;
+  -webkit-box-shadow: 10px 10px 10px #CDCDCD;
+          box-shadow: 10px 10px 10px #CDCDCD;
 }
 
 .fonction {
@@ -142,8 +142,8 @@ body {
 .fonction .fonction-button:hover {
   border-color: #F5EDFF;
   background-color: #f5edff;
-  -webkit-box-shadow: 0.6rem 0.6rem 0.6rem #CDCDCD;
-          box-shadow: 0.6rem 0.6rem 0.6rem #CDCDCD;
+  -webkit-box-shadow: 10px 10px 10px #CDCDCD;
+          box-shadow: 10px 10px 10px #CDCDCD;
 }
 
 .fonction .fonction-button:hover .fonction-icon {
@@ -217,8 +217,8 @@ body {
   height: 255px;
   background-color: #fff;
   border-radius: 25px;
-  -webkit-box-shadow: 0.3rem 0.3rem 0.3rem #CDCDCD;
-          box-shadow: 0.3rem 0.3rem 0.3rem #CDCDCD;
+  -webkit-box-shadow: 5px 5px 5px #CDCDCD;
+          box-shadow: 5px 5px 5px #CDCDCD;
   margin-bottom: 1.25rem;
 }
 
@@ -271,8 +271,8 @@ body {
 }
 
 .restaurant .restaurant-card-flex .restaurant-card:hover {
-  -webkit-box-shadow: 0.6rem 0.6rem 0.6rem #CDCDCD;
-          box-shadow: 0.6rem 0.6rem 0.6rem #CDCDCD;
+  -webkit-box-shadow: 10px 10px 10px #CDCDCD;
+          box-shadow: 10px 10px 10px #CDCDCD;
 }
 
 .restaurant .restaurant-card-flex a {
@@ -343,8 +343,7 @@ body {
   text-decoration: none;
 }
 
-.restaurant .restaurant-card-buble-new,
-.restaurant .restaurant-card-buble-new2 {
+.restaurant .restaurant-card-buble-new, .restaurant .restaurant-card-buble-new2 {
   width: 80px;
   height: 30px;
   background-color: #99E2D0;
@@ -353,10 +352,7 @@ body {
           transform: translate(270px, 30px);
 }
 
-.restaurant .restaurant-card-buble-new .buble-new-line,
-.restaurant .restaurant-card-buble-new .buble-new-line2,
-.restaurant .restaurant-card-buble-new2 .buble-new-line,
-.restaurant .restaurant-card-buble-new2 .buble-new-line2 {
+.restaurant .restaurant-card-buble-new .buble-new-line, .restaurant .restaurant-card-buble-new .buble-new-line2, .restaurant .restaurant-card-buble-new2 .buble-new-line, .restaurant .restaurant-card-buble-new2 .buble-new-line2 {
   color: #008766;
   padding: 5px 0px;
   font-weight: bold;
