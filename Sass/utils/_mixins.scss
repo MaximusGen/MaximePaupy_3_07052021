@@ -4,3 +4,12 @@
     justify-content: center;
     flex-flow: column wrap;
 }
+@mixin btn-gradient {
+    width: 220px;
+    height: 50px;
+    border-radius: 2rem;
+    background: $gradient;
+    box-shadow: $btn-shadow;
+    text-align: $text-align;
+    color: #fff;
+}

@@ -1,0 +1,182 @@
+@import 'utils/variable';
+@import 'utils/mixins';
+@import 'utils/placeholder';
+@import 'Layout/body';
+@import 'Layout/header';
+@import 'Layout/footer';
+
+.restaurant-image {
+	width: 100%;
+	height: 260px;
+}
+.restaurant-menus {
+	background-color: #f6f6f6;
+	border-radius: 45px 45px 0px 0px;
+    @include flex-center;
+}
+.restaurant-title {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    font-family: $font-Shrikhand;
+    &-h1 {
+        padding-right: 130px;
+    }
+}
+.heart {
+	width: 30px;
+	stroke-width: 30;
+	stroke: black;
+	fill: white;
+	cursor: pointer;
+}
+.heart-full {
+	position: absolute;
+	fill: url(#text-fill);
+	stroke: none;
+}
+.heart-empty {
+	width: 30px;
+	position: relative;
+	&:hover {
+		opacity: 0;
+		transition: 0.5s;
+	}
+}
+.restaurant-entry {
+    @include flex-center;
+    &-menu {
+        margin-bottom: 20px;
+        display: inline-block;
+        padding-right: 250px ;
+    }
+    &-menu-title{
+        margin-bottom: 10px;
+        color: $color-fonts;
+    }
+    &-menu-underscore {
+        width: 40px;
+        height: 5px;
+        background-color: $color-tertiary;
+    }
+}
+.restaurant-dish {
+    @include flex-center;
+}
+.restaurant-desert {
+    @include flex-center;
+}
+.restaurant-buton{
+    @include flex-center;
+    @include btn-gradient;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    &:hover {
+        box-shadow: $btn-shadow-hover;
+        transform: scale(1.2);
+    }
+   
+}
+
+.btn-menu{
+    width: 350px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: $btn-shadow;
+    cursor: pointer;
+    margin-bottom: 20px;
+    animation: btn-effect 1s;
+    .btn-menu-content {
+        margin: 10px 0px 5px 10px;
+    }
+    .menu-contents {
+        margin: 0px;
+    }
+    .btn-menu-description{
+        margin-top: 10px;
+    }
+    .btn-menu-price{
+        font-weight: bold;
+        transform: translate(290px,-24px);
+    }
+    .validation {
+        font-size: 20px;
+        border-radius: 0px 15px 15px 0px;
+        text-align: center;
+        line-height: 70px;
+        width: 60px;
+        height: 70px;
+        background-color: $color-tertiary;
+        color: #fff;
+        transform: translate(295px,-82px);
+        visibility: hidden;
+    }
+  
+}
+
+
+
+.btn-menu:hover {
+
+    .validation{
+        visibility: visible;
+        animation: 0.7s ease ;
+        transform-origin: right;
+    }
+    .btn-menu-price{
+      transform: translate(250px,-24px);
+      transition: 0.1s ease 
+      
+    }
+    span {
+        text-overflow: ellipsis ;
+        overflow: hidden;
+    }
+}
+
+
+  @keyframes slide-left {
+    0% {
+              transform: scaleX(0);
+    }
+    100% {
+              transform: scaleX(-50px);
+    }
+  }
+
+  @keyframes btn-effect {
+      from {
+         
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+
+
+  .opacity-2{
+      animation-delay: 0.2s;
+  }
+    .opacity-3{
+      animation-delay: 0.3s;
+  }
+    .opacity-4{
+      animation-delay: 0.4s;
+  }
+    .opacity-5{
+      animation-delay: 0.5s;
+  }
+    .opacity-6{
+      animation-delay: 0.6s;
+  }
+    .opacity-7{
+      animation-delay: 0.7s;
+  }
+  .opacity-8{
+      animation-delay: 0.8s;
+  }
+    .opacity-9{
+      animation-delay: 0.9s;
+  }

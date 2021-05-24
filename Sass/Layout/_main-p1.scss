@@ -25,13 +25,7 @@
         color: $color-fonts;
     }
     .description-button{
-        width: 220px;
-        height: 50px;
-        border-radius: 2rem;
-        background: $gradient;
-        box-shadow: $btn-shadow;
-        text-align: $text-align;
-        color: #fff;
+        @include btn-gradient;
 
         &:hover{
             border-color: $color-primary-light;
