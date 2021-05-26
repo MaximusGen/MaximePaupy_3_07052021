@@ -4,22 +4,22 @@
     color: #fff;
     
 
-    .charters-title{
+    &_title{
         font-family: $font-Shrikhand;
         font-size: 19px;
         margin: 0px 0px 15px 30px;
         padding-top: 20px;
     }
-    .charters-line{
+    &_line{
         margin: 0px 0px 10px 30px;
+            &_icon{
+               padding-right: $padding-icon;
+            }
+            &_icon1{
+               padding-right: 13px;
+            }
     }
-    .charters-line-icon{
-        padding-right: $padding-icon;
-    }
-    .charters-line-icon1{
-        padding-right: 13px;
-    }
-    .charters-line a {
+    &_line a {
         text-decoration: none;
         color: #fff;
     }

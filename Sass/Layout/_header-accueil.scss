@@ -3,7 +3,7 @@
     @include flex-center;
     box-shadow: $btn-shadow;
     
-    .topbar-image{
+    &_image{
         width: 165px;
         height: 30px;
     }

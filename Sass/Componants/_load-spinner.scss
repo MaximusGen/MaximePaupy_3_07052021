@@ -1,0 +1,118 @@
+$color-letter: #fff990;
+$border-letter: 1px solid #fff;
+
+.load-spinner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    left: 0px;
+    right: 0px;
+    visibility: hidden;
+    animation: background-load 2s linear;
+    
+    .letter{
+        color: $color-letter;
+        font-size: 2.5rem;
+        letter-spacing: 1rem;
+        animation: letter-load 2s linear;
+    }
+    .fork{
+        width: 10px;
+        height: 50px;
+        background-color: $color-letter;
+        margin-right: 1rem;
+        border-radius: 10px 10px 0px 0px;
+        border: $border-letter;
+    }
+    .plate{
+        width: 40px;
+        border-radius: 50%;
+        background-color: $color-letter;
+        height: 40px;
+        border: $border-letter;
+        margin-right: 1rem;
+    }
+    .knife {
+        width: 10px;
+        height: 50px;
+        background-color: $color-letter;
+        border-radius: 15px 0px 0px 0px;
+        border: $border-letter;
+    }
+    .fork,.plate,.knife{
+        animation: figure-load 2s linear ;
+    }
+}
+@keyframes background-load {
+    0% {
+        background-color: rgba(0, 0, 0, 0.466);
+        visibility: visible;
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.466);
+        visibility: visible;
+    }
+}
+@keyframes figure-load {
+    0% {
+        background-color: $color-letter;
+        text-shadow: 0 0 7px #9356DC;
+        visibility:visible;
+    }
+    90% {
+        background-color: #484848;
+        text-shadow: none;
+    }
+    100% {
+        background-color: $color-letter;
+        text-shadow: 0 0 7px #9356DC;
+        visibility: hidden;
+    }
+}
+
+@keyframes letter-load {
+    0% {
+        color: $color-letter;
+        text-shadow: 0 0 7px #9356DC;
+        visibility: visible;
+        
+    }
+    90% {
+        color: #484848;
+        text-shadow: none;
+    }
+    100% {
+        color: $color-letter;
+        text-shadow: 0 0 7px #9356DC;
+        visibility: hidden;
+    }
+}
+.pos2 {
+    animation-delay: 0.1s;
+    
+}
+.pos3 {
+    animation-delay: 0.2s;
+}
+.pos4 {
+    animation-delay: 0.3s;
+}
+.pos5 {
+    animation-delay: 0.4s;
+}
+.pos6 {
+    animation-delay: 0.5s;
+}
+.pos7 {
+    animation-delay: 0.6s;
+}
+.pos8 {
+    animation-delay: 0.7s;
+}
+.pos9 {
+    animation-delay: 0.8s;
+}

@@ -1,3 +1,5 @@
+@import '../utils/variable';
+
 .btn-menu{
     width: 350px;
     height: 70px;
@@ -10,10 +12,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    animation: btn-effect 1.5s;
+    animation: btn-effect 1s both;
 
     &_header {
-        margin: 10px 0px 5px 10px;
+        margin: 10px 0px 5px 15px;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
@@ -54,15 +56,18 @@
 
 .btn-menu:hover {
      flex-wrap: nowrap;
+    .btn-menu_header{
+        width: 216px;
+    }
     .btn-menu_validation{
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: 0.7s ease ;
+        animation: slide-left 0.4s ease ;
         transform-origin: right;
     }
     .btn-menu_price{
-      transition: 0.1s ease;
+      transition: 0.3s ease;
       padding-left: 20px;
       
     }
@@ -99,23 +104,23 @@
       animation-delay: 0.2s;
   }
     .opacity-3{
-      animation-delay: 0.3s;
-  }
-    .opacity-4{
       animation-delay: 0.4s;
   }
-    .opacity-5{
-      animation-delay: 0.5s;
-  }
-    .opacity-6{
-      animation-delay: 0.6s;
-  }
-    .opacity-7{
-      animation-delay: 0.7s;
-  }
-  .opacity-8{
+    .opacity-4{
       animation-delay: 0.8s;
   }
+    .opacity-5{
+      animation-delay: 1s;
+  }
+    .opacity-6{
+      animation-delay: 1.2s;
+  }
+    .opacity-7{
+      animation-delay: 1.4s;
+  }
+  .opacity-8{
+      animation-delay: 1.6s;
+  }
     .opacity-9{
-      animation-delay: 0.9s;
+      animation-delay: 2.8s;
   }
