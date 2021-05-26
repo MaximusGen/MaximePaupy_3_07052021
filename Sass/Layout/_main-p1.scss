@@ -37,8 +37,9 @@
 
 .fonction{
     height: 440px;
+    @include flex-center;
     &_title{
-        padding-left: $padding-icon;
+        padding-right: 11rem;
         margin-top: 0rem;
         margin-bottom: 2.2rem;
         padding-top: 3.5rem;
