@@ -2,23 +2,24 @@
 
 header{
     z-index: 10;
-    .topbar{
+    .topbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 65px;
     z-index: 10;
     background-color: #fff;
     box-shadow: $btn-shadow;
     position: relative;
-
+    padding-right: 40px;
       &_icon{
-        color: #000;
+        color: #000;       
+        font-size: 20px;
       }
       &_image{
         width: 165px;
         height: 30px;
-        padding-right: 120px;
+        
       }
     }
 }

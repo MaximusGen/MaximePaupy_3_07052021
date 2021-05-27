@@ -514,4 +514,9 @@ body {
   text-decoration: none;
   color: #fff;
 }
+
+.charters_line a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
 /*# sourceMappingURL=styles-accueil.css.map */

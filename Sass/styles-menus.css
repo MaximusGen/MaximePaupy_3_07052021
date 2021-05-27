@@ -50,23 +50,31 @@
 }
 
 .btn-menu_header {
-  margin: 10px 0px 5px 15px;
+  margin: 10px 0px 5px 11px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .btn-menu_title {
-  margin: 10px 0px;
+  padding-bottom: 5px;
+  margin: 0px;
+  font-size: 18px;
 }
 
 .btn-menu_description {
-  margin: 10px 0px;
+  margin: 0px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  color: #353535;
 }
 
 .btn-menu_price {
   font-weight: bold;
-  margin-top: 35px;
+  margin-top: 27px;
   padding-right: 20px;
 }
 
@@ -229,25 +237,26 @@ header .topbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 65px;
   z-index: 10;
   background-color: #fff;
   -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
   position: relative;
+  padding-right: 40px;
 }
 
 header .topbar_icon {
   color: #000;
+  font-size: 20px;
 }
 
 header .topbar_image {
   width: 165px;
   height: 30px;
-  padding-right: 120px;
 }
 
 main {
@@ -289,7 +298,7 @@ main .restaurant-menus_title {
 
 main .restaurant-menus_title_h1 {
   font-size: 27px;
-  padding-right: 20px;
+  padding-right: 50px;
 }
 
 .restaurant-entry {
@@ -452,6 +461,11 @@ main .restaurant-menus_title_h1 {
 
 .charters_line a {
   text-decoration: none;
+  color: #fff;
+}
+
+.charters_line a:hover {
+  text-decoration: underline;
   color: #fff;
 }
 

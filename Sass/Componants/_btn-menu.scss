@@ -15,22 +15,28 @@
     animation: btn-effect 1s both;
 
     &_header {
-        margin: 10px 0px 5px 15px;
+        margin: 10px 0px 5px 11px;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
+        align-self: center;
     }
     &_title
     {
-        margin:10px 0px;
+        padding-bottom: 5px;
+        margin: 0px;
+        font-size: 18px;
     }
     
     &_description{
-        margin: 10px 0px;
+        margin: 0px;
+        padding-bottom: 5px;
+        font-size: 15px;
+        color: $color-fonts;
     }
     &_price{
         font-weight: bold;
-        margin-top: 35px;
+        margin-top: 27px;
         padding-right: 20px;
     }
     &_validation {
