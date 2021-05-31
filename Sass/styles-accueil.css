@@ -2,13 +2,19 @@
   width: 330px;
   height: 75px;
   border: 1px solid #F6F6F6;
-  border-radius: 1.25rem;
+  border-radius: 20px;
   -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
   background-color: #F6F6F6;
   text-align: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
   font-weight: bold;
+}
+
+@media only screen and (min-width: 380px) and (max-width: 768px) {
+  .fonction_button {
+    width: 500px;
+  }
 }
 
 .fonction_button span {
@@ -23,8 +29,62 @@
           transform: translate(-650%, 100%);
 }
 
-.load-spinner {
+@media only screen and (min-width: 380px) and (max-width: 768px) {
+  .fonction_button span {
+    -webkit-transform: translate(-1000%, 100%);
+            transform: translate(-1000%, 100%);
+  }
+}
+
+@-webkit-keyframes btn-effect {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes btn-effect {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.heart {
+  width: 30px;
+  stroke-width: 30;
+  stroke: black;
+  fill: white;
+  cursor: pointer;
+}
+
+.heart-full {
   position: absolute;
+  fill: url(#text-fill);
+  stroke: none;
+}
+
+.heart-empty {
+  width: 30px;
+  position: relative;
+}
+
+.heart-empty:hover {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.load-spinner {
+  position: fixed;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -221,6 +281,12 @@ body {
   height: 100%;
 }
 
+@media only screen and (min-width: 380px) and (max-width: 768px) {
+  body {
+    width: 768px;
+  }
+}
+
 .topbar {
   height: 65px;
   display: -webkit-box;
@@ -236,17 +302,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .topbar_image {
-  width: 165px;
+  width: 163px;
   height: 30px;
 }
 
 .localisation {
-  height: 3.125rem;
+  height: 50px;
   background-color: #EAEAEA;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,6 +325,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
+  -webkit-box-shadow: inset 2px 19px 11px -15px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 2px 19px 11px -15px rgba(0, 0, 0, 0.25);
 }
 
 .localisation_icon {
@@ -287,21 +353,21 @@ body {
 
 .description_h1 {
   text-align: center;
-  margin: 0rem;
-  font-size: 1.375rem;
-  margin-bottom: 1.25rem;
+  margin: 0px;
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
 .description_words {
   text-align: center;
-  margin-bottom: 1.875rem;
+  margin-bottom: 30px;
   color: #353535;
 }
 
 .description_button {
   width: 220px;
   height: 50px;
-  border-radius: 2rem;
+  border-radius: 32px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
@@ -335,10 +401,16 @@ body {
 }
 
 .fonction_title {
-  padding-right: 11rem;
-  margin-top: 0rem;
-  margin-bottom: 2.2rem;
-  padding-top: 3.5rem;
+  padding-right: 176px;
+  margin-top: 0px;
+  margin-bottom: 35px;
+  padding-top: 56px;
+}
+
+@media only screen and (min-width: 380px) and (max-width: 768px) {
+  .fonction_title {
+    padding-right: 550px;
+  }
 }
 
 .fonction_button:hover {
@@ -357,8 +429,8 @@ body {
 }
 
 .fonction_button_p {
-  margin: 0rem;
-  padding: 0.125rem 0rem;
+  margin: 0px;
+  padding: 2px 0px;
 }
 
 .restaurant {
@@ -377,8 +449,15 @@ body {
   height: 30px;
   background-color: #99E2D0;
   text-align: center;
-  -webkit-transform: translate(270px, 30px);
-          transform: translate(270px, 30px);
+  -webkit-transform: translate(245px, 30px);
+          transform: translate(245px, 30px);
+}
+
+@media only screen and (min-width: 380px) and (max-width: 768px) {
+  .restaurant .restaurant-card-buble-new, .restaurant .restaurant-card-buble-new2 {
+    -webkit-transform: translate(530px, 30px);
+            transform: translate(530px, 30px);
+  }
 }
 
 .restaurant .restaurant-card-buble-new .buble-new-line, .restaurant .restaurant-card-buble-new .buble-new-line2, .restaurant .restaurant-card-buble-new2 .buble-new-line, .restaurant .restaurant-card-buble-new2 .buble-new-line2 {
@@ -392,8 +471,15 @@ body {
           transform: translate(100px, 30px);
 }
 
+@media only screen and (min-width: 380px) and (max-width: 768px) {
+  .restaurant .restaurant-card-buble-new2 {
+    -webkit-transform: translate(185px, 20px);
+            transform: translate(185px, 20px);
+  }
+}
+
 .restaurant .restaurant-card-buble-new2 .buble-new-line2 {
-  margin: 0rem;
+  margin: 0px;
 }
 
 .restaurant .restaurant-card-flex {
@@ -411,7 +497,7 @@ body {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   flex-flow: column wrap;
-  margin-top: -1.25rem;
+  margin-top: -20px;
 }
 
 .restaurant .restaurant-card-flex .restaurant-card {
@@ -421,7 +507,13 @@ body {
   border-radius: 25px;
   -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 380px) and (max-width: 768px) {
+  .restaurant .restaurant-card-flex .restaurant-card {
+    width: 500px;
+  }
 }
 
 .restaurant .restaurant-card-flex .restaurant-card .restaurant-card-image {
@@ -432,9 +524,15 @@ body {
      object-fit: cover;
 }
 
+@media only screen and (min-width: 380px) and (max-width: 768px) {
+  .restaurant .restaurant-card-flex .restaurant-card .restaurant-card-image {
+    width: 500px;
+  }
+}
+
 .restaurant .restaurant-card-flex .restaurant-card .lines-card {
   margin: 0rem;
-  padding: 0.625rem 1.25rem 0rem;
+  padding: 10px 20px 0px;
 }
 
 .restaurant .restaurant-card-flex .restaurant-card .restaurant-card-title {
@@ -453,6 +551,13 @@ body {
   cursor: pointer;
   -webkit-transform: translate(270px, -40px);
           transform: translate(270px, -40px);
+}
+
+@media only screen and (min-width: 380px) and (max-width: 768px) {
+  .restaurant .restaurant-card-flex .restaurant-card .heart {
+    -webkit-transform: translate(440px, -40px);
+            transform: translate(440px, -40px);
+  }
 }
 
 .restaurant .restaurant-card-flex .restaurant-card .heart-full {
@@ -482,7 +587,7 @@ body {
 }
 
 .restaurant .card-marg {
-  margin-top: -1.875rem;
+  margin-top: -30px;
 }
 
 .charters {
@@ -493,9 +598,15 @@ body {
 
 .charters_title {
   font-family: "Shrikhand", sans-serif;
-  font-size: 19px;
+  font-size: 1.25rem;
   margin: 0px 0px 15px 30px;
   padding-top: 20px;
+}
+
+@media only screen and (min-width: 380px) and (max-width: 768px) {
+  .charters_title {
+    font-size: 1.50rem;
+  }
 }
 
 .charters_line {
@@ -518,5 +629,31 @@ body {
 .charters_line a:hover {
   text-decoration: underline;
   color: #fff;
+}
+
+@media only screen and (min-width: 380px) and (max-width: 768px) {
+  .responsive-footer-lines {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .responsive-footer-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
 }
 /*# sourceMappingURL=styles-accueil.css.map */

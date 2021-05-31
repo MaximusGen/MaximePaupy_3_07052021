@@ -1,8 +1,8 @@
 main{
     z-index: 10;
     position: relative;
-
-    .restaurant-menus {
+}
+.restaurant-menus {
 	background-color: #f6f6f6;
 	border-radius: 50px 50px 0px 0px;
     @include flex-center;
@@ -13,71 +13,55 @@ main{
 	      justify-content: space-around;
 	      align-items: center;
           font-family: $font-Shrikhand;
-          margin-top: 20px;
+          margin-top: 10px;
+          width: 100%;
 
              &_h1 {
-                 font-size: 27px;
-                padding-right: 50px
+                 font-size: 1.70rem;
+                 position: relative;
+                 left: -10px;
+                    @media #{$ipad} {
+                       left: -30px;
+                    }
              }
        }
+    }
+@media #{$ipad} {
+    .restaurant-menus_title-like{
+        position: relative;
+        right: -35px
     }
 }
 
 
 .restaurant-entry {
     @include flex-center;
-    &_menu {
-        margin-bottom: 20px;
-        display: inline-block;
-        padding-right: 250px ;
-
-        &_title{
-           margin-bottom: 10px;
-           color: $color-fonts;
-        }
-        &_underscore {
-           width: 40px;
-           height: 5px;
-           background-color: $color-tertiary;
-        }
-    }
-
+    @include menus;
 }
+
 .restaurant-dish {
     @include flex-center;
-    &_menu {
-        margin-bottom: 20px;
-        display: inline-block;
-        padding-right: 250px ;
-
-        &_title{
-           margin-bottom: 10px;
-           color: $color-fonts;
-        }
-        &_underscore {
-           width: 40px;
-           height: 5px;
-           background-color: $color-tertiary;
+    @include menus;
+    .menu-change{
+        left: -145px;
+        @media #{$ipad} {
+            left: -37%;
         }
     }
 }
 .restaurant-desert {
     @include flex-center;
-        &_menu {
-        margin-bottom: 20px;
-        display: inline-block;
-        padding-right: 250px ;
+    @include menus;
+}
+@media #{$ipad} {
+    .responsive-menu{
+        width: 100%;
 
-        &_title{
-           margin-bottom: 10px;
-           color: $color-fonts;
-        }
-        &_underscore {
-           width: 40px;
-           height: 5px;
-           background-color: $color-tertiary;
+        &_order {
+            left: -35%
         }
     }
+    
 }
 .restaurant-buton{
     @include flex-center;

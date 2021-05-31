@@ -2,13 +2,17 @@
     background: #353535;
     height: 200px;
     color: #fff;
-    
+     @media #{$ipad} {
+     }
 
     &_title{
         font-family: $font-Shrikhand;
-        font-size: 19px;
+        font-size: 1.25rem;
         margin: 0px 0px 15px 30px;
         padding-top: 20px;
+        @media #{$ipad} {
+            font-size: 1.50rem;
+        }
     }
     &_line{
         margin: 0px 0px 10px 30px;
@@ -26,5 +30,19 @@
     &_line a:hover{
         text-decoration:underline;
         color: #fff;
+    }
+}
+
+@media #{$ipad} {
+    .responsive-footer-lines {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .responsive-footer-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
     }
 }

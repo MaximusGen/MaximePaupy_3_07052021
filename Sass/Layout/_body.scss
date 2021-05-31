@@ -1,7 +1,13 @@
+@import '../utils/variable';
+
 body {
     width: 375px;
     margin: auto;
     padding: 0;
     font-family: $font-roboto;
     height: 100%;
+    @media #{$ipad} {
+    width: 768px;
 }
+}
+

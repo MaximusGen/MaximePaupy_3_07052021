@@ -1,7 +1,8 @@
 .localisation{
-    height: 3.125rem;
+    height: 50px;
     background-color:#EAEAEA;
     @include flex-center;
+    box-shadow: inset 2px 19px 11px -15px rgba(0, 0, 0, 0.25);
 
     &_icon{
          padding-right: $padding-icon;
@@ -15,13 +16,13 @@
 
     &_h1{
         text-align: $text-align;
-        margin: 0rem;
-        font-size: 1.375rem;
-        margin-bottom: 1.25rem;
+        margin: 0px;
+        font-size: 22px;
+        margin-bottom: 20px;
     }
     &_words{
         text-align: $text-align;
-        margin-bottom: 1.875rem;
+        margin-bottom: 30px;
         color: $color-fonts;
     }
     &_button{
@@ -39,10 +40,13 @@
     height: 440px;
     @include flex-center;
     &_title{
-        padding-right: 11rem;
-        margin-top: 0rem;
-        margin-bottom: 2.2rem;
-        padding-top: 3.5rem;
+        padding-right: 176px;
+        margin-top: 0px;
+        margin-bottom: 35px;
+        padding-top: 56px;
+        @media #{$ipad} {
+            padding-right: 550px ;
+        }
     }
     &_button{
         @extend %btn-p1;
@@ -63,8 +67,8 @@
             padding-right: $padding-icon;
         }
         &_p{
-            margin: 0rem;
-            padding: 0.125rem 0rem;
+            margin: 0px;
+            padding: 2px 0px;
         }
 
     }
@@ -85,7 +89,10 @@
         height: 30px;
         background-color: $color-tertiary;
         text-align: center;
-        transform: translate(270px, 30px);
+        transform: translate(245px, 30px);
+        @media #{$ipad} {
+            transform: translate(530px, 30px);
+        }
         .buble-new-line,.buble-new-line2{
             color: #008766;
             padding: 5px 0px;
@@ -94,14 +101,17 @@
     }
     .restaurant-card-buble-new2{
         transform: translate(100px,30px);
+        @media #{$ipad} {
+           transform: translate(185px,20px);
+        }
         .buble-new-line2{
-            margin: 0rem;
+            margin: 0px;
         }
     }
     .restaurant-card-flex{
         @include flex-center;
          flex-flow: column wrap;
-         margin-top: -1.25rem;
+         margin-top: -20px;
 
         .restaurant-card{
             width: 335px;
@@ -109,17 +119,23 @@
             background-color: #fff;
             border-radius: 25px;
             box-shadow: $btn-shadow;
-            margin-bottom: 1.25rem;
+            margin-bottom: 20px;
+            @media #{$ipad} {
+                width: 500px;
+            }
 
                 .restaurant-card-image{
                    width: 335px;
                    height: 175px;
                    border-radius: 25px 25px 0px 0px;
                    object-fit: cover;
+                   @media #{$ipad} {
+                       width: 500px;
+                   }
                 }
                 .lines-card{
                    margin: 0rem;
-                   padding: 0.625rem 1.25rem 0rem;
+                   padding: 10px 20px 0px;
                 }
                 .restaurant-card-title{
                    color: #000;
@@ -135,6 +151,9 @@
                   fill: white;
                   cursor: pointer;
                   transform: translate(270px,-40px);
+                  @media #{$ipad} {
+                     transform: translate(440px,-40px);
+                  }
                 }
                 .heart-full{
                   position: absolute;
@@ -159,7 +178,7 @@
         text-decoration: none;
     }
     .card-marg{
-        margin-top: -1.875rem;
+        margin-top: -30px;
     }
 
 }

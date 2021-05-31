@@ -7,9 +7,44 @@
 @mixin btn-gradient {
     width: 220px;
     height: 50px;
-    border-radius: 2rem;
+    border-radius: 32px;
     background: $gradient;
     box-shadow: $btn-shadow;
     text-align: $text-align;
     color: #fff;
+}
+
+@mixin header-image {
+    width: 163px;
+    height: 30px;
+}
+
+@mixin btn-white-space {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@mixin underscore-menu {
+    width: 40px;
+    height: 5px;
+}
+
+@mixin menus {
+            &_menu {
+        margin-bottom: 20px;
+        display: inline-block;
+        position: relative;
+        left: -135px;
+
+        &_title{
+           margin-bottom: 10px;
+           color: $color-fonts;
+           font-weight: normal
+        }
+
+        &_underscore {
+          @include underscore-menu;
+           background-color: $color-tertiary;
+        }
+    }
 }

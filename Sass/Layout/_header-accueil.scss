@@ -1,10 +1,8 @@
 .topbar {
     height: 65px;
     @include flex-center;
-    box-shadow: $btn-shadow;
     
     &_image{
-        width: 165px;
-        height: 30px;
+        @include header-image;
     }
 }

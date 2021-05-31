@@ -3,12 +3,15 @@
     width: 330px;
     height: 75px;
     border: 1px solid $background-main;
-    border-radius: 1.25rem;
+    border-radius: 20px;
     box-shadow: $btn-shadow;
     background-color: $background-main;
     text-align: $text-align;
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
     font-weight: bold;
+    @media #{$ipad} {
+        width: 500px;
+    }
 }
 
 %span
@@ -21,4 +24,17 @@
     width: 25px;
     height: 25px;
     transform: translate(-650%,100%);
+    @media #{$ipad} {
+        transform: translate(-1000%,100%);
+    }
 }
+
+  @keyframes btn-effect {
+      from {
+         
+          transform: scale(0);
+      }
+      to {
+          transform: scale(1);
+      }
+  }
