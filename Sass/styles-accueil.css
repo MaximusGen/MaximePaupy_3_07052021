@@ -58,31 +58,6 @@
   }
 }
 
-.heart {
-  width: 30px;
-  stroke-width: 30;
-  stroke: black;
-  fill: white;
-  cursor: pointer;
-}
-
-.heart-full {
-  position: absolute;
-  fill: url(#text-fill);
-  stroke: none;
-}
-
-.heart-empty {
-  width: 30px;
-  position: relative;
-}
-
-.heart-empty:hover {
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
 .load-spinner {
   position: fixed;
   width: 100%;
@@ -307,6 +282,31 @@ body {
 .topbar_image {
   width: 163px;
   height: 30px;
+}
+
+.heart {
+  width: 30px;
+  stroke-width: 30;
+  stroke: black;
+  fill: white;
+  cursor: pointer;
+}
+
+.heart-full {
+  position: absolute;
+  fill: url(#text-fill);
+  stroke: none;
+}
+
+.heart-empty {
+  width: 30px;
+  position: relative;
+}
+
+.heart-empty:hover {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .localisation {
