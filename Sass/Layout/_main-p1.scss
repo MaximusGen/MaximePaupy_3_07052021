@@ -39,8 +39,8 @@
 }
 
 .fonction{
-    height: 440px;
     @include flex-center;
+    padding-bottom: 60px;
     &_title{
         padding-right: 176px;
         margin-top: 0px;

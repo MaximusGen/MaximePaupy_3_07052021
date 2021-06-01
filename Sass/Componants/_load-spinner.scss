@@ -12,6 +12,7 @@ $border-letter: 1px solid #fff;
     left: 0px;
     right: 0px;
     visibility: hidden;
+    z-index: 50;
     animation: background-load 2s linear;
     
     .letter{
@@ -49,45 +50,57 @@ $border-letter: 1px solid #fff;
 }
 @keyframes background-load {
     0% {
-        background-color: rgba(0, 0, 0, 0.466);
+        background-color: #000;
+        visibility: visible;
+    }
+    25% {
+        background-color: rgba(0, 0, 0, 0.750);
+        visibility: visible; 
+    }
+    50% {
+        background-color: rgba(0, 0, 0, 0.500);
+        visibility: visible;
+    }
+    75% {
+        background-color: rgba(0, 0, 0, 0.250);
         visibility: visible;
     }
     100% {
-        background-color: rgba(0, 0, 0, 0.466);
+        background-color: rgba(0, 0, 0, 0.0);
         visibility: visible;
     }
 }
 @keyframes figure-load {
     0% {
-        background-color: $color-letter;
+        background-color: #9356DC;
         text-shadow: 0 0 7px #9356DC;
         visibility:visible;
     }
     90% {
-        background-color: #484848;
-        text-shadow: none;
+        background-color: #FF79DA;
+        text-shadow: 0 0 7px #FF79DA;
     }
     100% {
-        background-color: $color-letter;
-        text-shadow: 0 0 7px #9356DC;
+        background-color: #99E2D0;
+        text-shadow: 0 0 7px #99E2D0;
         visibility: hidden;
     }
 }
 
 @keyframes letter-load {
     0% {
-        color: $color-letter;
+        color: #9356DC;
         text-shadow: 0 0 7px #9356DC;
         visibility: visible;
         
     }
     90% {
-        color: #484848;
-        text-shadow: none;
+        color: #FF79DA;
+        text-shadow: 0 0 7px #FF79DA;
     }
     100% {
-        color: $color-letter;
-        text-shadow: 0 0 7px #9356DC;
+        color: #99E2D0;
+        text-shadow: 0 0 7px #99E2D0;
         visibility: hidden;
     }
 }
