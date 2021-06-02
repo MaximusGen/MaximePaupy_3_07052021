@@ -75,48 +75,18 @@
   left: 0px;
   right: 0px;
   visibility: hidden;
-  z-index: 50;
   -webkit-animation: background-load 2s linear;
           animation: background-load 2s linear;
+  z-index: 10;
 }
 
-.load-spinner .letter {
-  color: #fff990;
-  font-size: 2.5rem;
-  letter-spacing: 1rem;
+.letter {
+  color: #99E2D0;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 70px;
+  letter-spacing: 20px;
   -webkit-animation: letter-load 2s linear;
           animation: letter-load 2s linear;
-}
-
-.load-spinner .fork {
-  width: 10px;
-  height: 50px;
-  background-color: #fff990;
-  margin-right: 1rem;
-  border-radius: 10px 10px 0px 0px;
-  border: 1px solid #fff;
-}
-
-.load-spinner .plate {
-  width: 40px;
-  border-radius: 50%;
-  background-color: #fff990;
-  height: 40px;
-  border: 1px solid #fff;
-  margin-right: 1rem;
-}
-
-.load-spinner .knife {
-  width: 10px;
-  height: 50px;
-  background-color: #fff990;
-  border-radius: 15px 0px 0px 0px;
-  border: 1px solid #fff;
-}
-
-.load-spinner .fork, .load-spinner .plate, .load-spinner .knife {
-  -webkit-animation: figure-load 2s linear;
-          animation: figure-load 2s linear;
 }
 
 @-webkit-keyframes background-load {
@@ -126,19 +96,15 @@
   }
   25% {
     background-color: rgba(0, 0, 0, 0.75);
-    visibility: visible;
   }
   50% {
     background-color: rgba(0, 0, 0, 0.5);
-    visibility: visible;
   }
   75% {
     background-color: rgba(0, 0, 0, 0.25);
-    visibility: visible;
   }
   100% {
     background-color: rgba(0, 0, 0, 0);
-    visibility: visible;
   }
 }
 
@@ -149,53 +115,15 @@
   }
   25% {
     background-color: rgba(0, 0, 0, 0.75);
-    visibility: visible;
   }
   50% {
     background-color: rgba(0, 0, 0, 0.5);
-    visibility: visible;
   }
   75% {
     background-color: rgba(0, 0, 0, 0.25);
-    visibility: visible;
   }
   100% {
     background-color: rgba(0, 0, 0, 0);
-    visibility: visible;
-  }
-}
-
-@-webkit-keyframes figure-load {
-  0% {
-    background-color: #9356DC;
-    text-shadow: 0 0 7px #9356DC;
-    visibility: visible;
-  }
-  90% {
-    background-color: #FF79DA;
-    text-shadow: 0 0 7px #FF79DA;
-  }
-  100% {
-    background-color: #99E2D0;
-    text-shadow: 0 0 7px #99E2D0;
-    visibility: hidden;
-  }
-}
-
-@keyframes figure-load {
-  0% {
-    background-color: #9356DC;
-    text-shadow: 0 0 7px #9356DC;
-    visibility: visible;
-  }
-  90% {
-    background-color: #FF79DA;
-    text-shadow: 0 0 7px #FF79DA;
-  }
-  100% {
-    background-color: #99E2D0;
-    text-shadow: 0 0 7px #99E2D0;
-    visibility: hidden;
   }
 }
 
@@ -206,12 +134,12 @@
     visibility: visible;
   }
   90% {
-    color: #FF79DA;
-    text-shadow: 0 0 7px #FF79DA;
+    color: #353535;
+    text-shadow: none;
   }
   100% {
-    color: #99E2D0;
-    text-shadow: 0 0 7px #99E2D0;
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
     visibility: hidden;
   }
 }
@@ -223,54 +151,69 @@
     visibility: visible;
   }
   90% {
-    color: #FF79DA;
-    text-shadow: 0 0 7px #FF79DA;
+    color: #353535;
+    text-shadow: none;
   }
   100% {
-    color: #99E2D0;
-    text-shadow: 0 0 7px #99E2D0;
+    color: #9356DC;
+    text-shadow: 0 0 7px #9356DC;
     visibility: hidden;
   }
 }
 
-.pos2 {
+.letter:nth-child(1) {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
 
-.pos3 {
+.letter:nth-child(2) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-.pos4 {
+.letter:nth-child(3) {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
-.pos5 {
+.letter:nth-child(4) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
-.pos6 {
+.letter:nth-child(5) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-.pos7 {
+.letter:nth-child(6) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
-.pos8 {
+.letter:nth-child(7) {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
 
-.pos9 {
+.letter:nth-child(8) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
+}
+
+.letter:nth-child(9) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.letter:nth-child(10) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.letter:nth-child(11) {
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
 }
 
 body {
