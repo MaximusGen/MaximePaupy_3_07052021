@@ -16,7 +16,7 @@ $font-Shrikhand:'Shrikhand', sans-serif;
 
 //Padding
  
-$padding-icon: 1.25rem;
+$padding-icon: 20px;
 
 //Box-Shadow
 
@@ -24,6 +24,6 @@ $btn-shadow: 0px 5px 6px 0px rgba(0,0,0,0.20);
 $btn-shadow-hover: 10px 10px 10px  rgba(0,0,0,0.20);
 
 //Responsive
-
+$ipad-1024:'only screen and (max-width:1024px)';
 $ipad: 'only screen and (min-width:380px) and (max-width: 768px)';
-$desktop :'only screen and (min-width:800px)';
+$mobile :'only screen and (max-width:378px)';

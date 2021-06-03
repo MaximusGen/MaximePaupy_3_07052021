@@ -1,8 +1,4 @@
 .topbar {
     height: 65px;
     @include flex-center;
-    
-    &_image{
-        @include header-image;
-    }
 }

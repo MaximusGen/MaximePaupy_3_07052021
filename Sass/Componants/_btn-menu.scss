@@ -1,7 +1,7 @@
 @import '../utils/variable';
 
 .btn-menu{
-    width: 350px;
+    width: 450px;
     height: 70px;
     background-color: #fff;
     border-radius: 15px;
@@ -55,10 +55,6 @@
         margin-top: 10px;
         margin-bottom: 0px;
     }
-    @media #{$ipad} {
-        width: 80%;
-        
-    }
 }
 
 
@@ -67,10 +63,7 @@
 .btn-menu:hover {
      flex-wrap: nowrap;
     .btn-menu_header{
-        width: 216px;
-        @media #{$ipad}{
-            width: 560px;
-        }
+        width: 360px;
     }
     .btn-menu_validation{
         display: flex;
