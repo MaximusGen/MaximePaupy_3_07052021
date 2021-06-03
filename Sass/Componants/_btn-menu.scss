@@ -1,7 +1,7 @@
 @import '../utils/variable';
 
 .btn-menu{
-    width: 450px;
+    width: 350px;
     height: 70px;
     background-color: #fff;
     border-radius: 15px;
@@ -13,7 +13,9 @@
     align-items: center;
     justify-content: space-between;
     animation: btn-effect 1s both;
-
+    @media #{$medium} {
+        width: 500px;
+    }
     &_header {
         margin: 10px 0px 5px 11px;
         align-self: center;
@@ -51,10 +53,10 @@
         display: none;
         
     }
-    .menu-contents {
-        margin-top: 10px;
-        margin-bottom: 0px;
-    }
+}
+.menu-contents {
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 
@@ -63,7 +65,10 @@
 .btn-menu:hover {
      flex-wrap: nowrap;
     .btn-menu_header{
-        width: 360px;
+        width: 216px;
+        @media #{$medium}{
+            width: 390px;
+        }
     }
     .btn-menu_validation{
         display: flex;

@@ -5,17 +5,15 @@
 }
 
 .charters-title {
-    @include flex-center ($flow: none);
-    margin-bottom: 20px;
     &_footer{
         font-family: $font-Shrikhand;
-        font-size: 3rem;
+        font-size: 1.25rem;
         margin: 0px 0px 15px 30px;
         padding-top: 20px;
     }
 }
 .charters-lines{
-    @include flex-center ($justify: space-around, $flow: none);
+
     margin-bottom: 30px;
     &_link {
         margin: 0px 0px 10px 30px;
@@ -23,4 +21,19 @@
 }
  .icon-charters {
      padding-right: $padding-icon;
+ }
+
+ @media #{$medium} {
+
+    .charters-title{
+        @include flex-center;
+        &_footer{
+            font-size: 3rem;
+        }
+    }
+
+    .charters-lines{
+        @include flex-center($justify: space-around, $flow: row wrap);
+    }
+
  }

@@ -18,22 +18,22 @@ main{
 
     &_title {
     font-size: 1.70rem;
-    padding-left: 25px;
+    padding-left: 20px;
     }
     &_like {
-    padding-right: 40px;
+    padding-right: 35px;
     }
 }
 
 .restaurant-menus{
     display: flex;
     flex-flow: row wrap;
-    @media #{$ipad-1024} {
-        @include flex-center;
-    }
 }
 .menu {
-    margin-right: 50px;
+    margin-left: 10px;
+    @media #{$medium} {
+        margin-right: 50px;
+    }
 }
 .menu-order {
     margin-bottom: 20px;

@@ -1,25 +1,3 @@
-@-webkit-keyframes btn-effect {
-  from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes btn-effect {
-  from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 .restaurant-buton {
   width: 220px;
   height: 50px;
@@ -58,7 +36,7 @@
 }
 
 .btn-menu {
-  width: 450px;
+  width: 350px;
   height: 70px;
   background-color: #fff;
   border-radius: 15px;
@@ -81,6 +59,12 @@
           justify-content: space-between;
   -webkit-animation: btn-effect 1s both;
           animation: btn-effect 1s both;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-menu {
+    width: 500px;
+  }
 }
 
 .btn-menu_header {
@@ -130,7 +114,7 @@
   display: none;
 }
 
-.btn-menu .menu-contents {
+.menu-contents {
   margin-top: 10px;
   margin-bottom: 0px;
 }
@@ -141,7 +125,13 @@
 }
 
 .btn-menu:hover .btn-menu_header {
-  width: 360px;
+  width: 216px;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-menu:hover .btn-menu_header {
+    width: 390px;
+  }
 }
 
 .btn-menu:hover .btn-menu_validation {
@@ -185,6 +175,17 @@
   100% {
     -webkit-transform: scaleX(-50px);
             transform: scaleX(-50px);
+  }
+}
+
+@-webkit-keyframes btn-effect {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -326,11 +327,11 @@ main {
 
 .section-menus-restaurant_title {
   font-size: 1.70rem;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 
 .section-menus-restaurant_like {
-  padding-right: 40px;
+  padding-right: 35px;
 }
 
 .restaurant-menus {
@@ -343,26 +344,14 @@ main {
           flex-flow: row wrap;
 }
 
-@media only screen and (max-width: 1024px) {
-  .restaurant-menus {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-  }
+.menu {
+  margin-left: 10px;
 }
 
-.menu {
-  margin-right: 50px;
+@media only screen and (min-width: 768px) {
+  .menu {
+    margin-right: 50px;
+  }
 }
 
 .menu-order {
@@ -414,43 +403,14 @@ main {
   color: #fff;
 }
 
-.charters-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: none;
-          flex-flow: none;
-  margin-bottom: 20px;
-}
-
 .charters-title_footer {
   font-family: "Shrikhand", sans-serif;
-  font-size: 3rem;
+  font-size: 1.25rem;
   margin: 0px 0px 15px 30px;
   padding-top: 20px;
 }
 
 .charters-lines {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: none;
-          flex-flow: none;
   margin-bottom: 30px;
 }
 
@@ -460,6 +420,41 @@ main {
 
 .icon-charters {
   padding-right: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .charters-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .charters-title_footer {
+    font-size: 3rem;
+  }
+  .charters-lines {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
 }
 
 .restaurant-image {
