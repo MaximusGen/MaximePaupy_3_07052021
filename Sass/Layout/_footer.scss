@@ -2,29 +2,38 @@
     background: #353535;
     height: 200px;
     color: #fff;
-    
+}
 
-    &_title{
+.charters-title {
+    &_footer{
         font-family: $font-Shrikhand;
-        font-size: 19px;
+        font-size: 1.25rem;
         margin: 0px 0px 15px 30px;
         padding-top: 20px;
     }
-    &_line{
+}
+.charters-lines{
+
+    margin-bottom: 30px;
+    &_link {
         margin: 0px 0px 10px 30px;
-            &_icon{
-               padding-right: $padding-icon;
-            }
-            &_icon1{
-               padding-right: 13px;
-            }
-    }
-    &_line a {
-        text-decoration: none;
-        color: #fff;
-    }
-    &_line a:hover{
-        text-decoration:underline;
-        color: #fff;
     }
 }
+ .icon-charters {
+     padding-right: $padding-icon;
+ }
+
+ @media #{$medium} {
+
+    .charters-title{
+        @include flex-center;
+        &_footer{
+            font-size: 3rem;
+        }
+    }
+
+    .charters-lines{
+        @include flex-center($justify: space-around, $flow: row wrap);
+    }
+
+ }

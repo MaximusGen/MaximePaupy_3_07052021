@@ -11,14 +11,18 @@ $gradient : linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 1
 //Police
 
 $font-roboto: 'Roboto', sans-serif;
-$text-align: center;
+$center: center;
 $font-Shrikhand:'Shrikhand', sans-serif; 
 
 //Padding
  
-$padding-icon: 1.25rem;
+$padding-icon: 20px;
 
 //Box-Shadow
 
 $btn-shadow: 0px 5px 6px 0px rgba(0,0,0,0.20);
 $btn-shadow-hover: 10px 10px 10px  rgba(0,0,0,0.20);
+
+//Responsive
+
+$medium: 'only screen and (min-width:768px)';

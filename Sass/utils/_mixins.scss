@@ -1,15 +1,14 @@
-@mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column wrap;
+@mixin flex-center ($display: flex, $align: center, $justify: center, $flow: column wrap){
+    display: $display;
+    align-items: $align ;
+    justify-content: $justify;
+    flex-flow: $flow;
 }
-@mixin btn-gradient {
-    width: 220px;
-    height: 50px;
-    border-radius: 2rem;
-    background: $gradient;
-    box-shadow: $btn-shadow;
-    text-align: $text-align;
-    color: #fff;
+
+
+
+@mixin btn-white-space ($text: ellipsis, $overflow: hidden, $space: nowrap) {
+    text-overflow: $text;
+    overflow: $overflow;
+    white-space: $space;
 }
