@@ -1,17 +1,21 @@
+// Restaurant page , main
+
 main{
     z-index: 10;
     position: relative;
 }
+
+// Menu réservation 
+
 .section-menus {
 	background-color: #f6f6f6;
 	border-radius: 45px 45px 0px 0px;
     @include flex-center;
     margin-top: -150px;
 }
+
 .section-menus-restaurant {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	@include flex-center ($justify: space-between, $flow: none);
     font-family: $font-Shrikhand;
     margin-top: 10px;
     width: 100%;
@@ -26,15 +30,19 @@ main{
 }
 
 .restaurant-menus{
-    display: flex;
-    flex-flow: row wrap;
+    @include flex-center ($justify: none, $align: none, $flow: row wrap);
+    @media only screen and (min-width:768px) and (max-width:1024px) {
+        @include flex-center ($justify: center, $align: center, $flow: row wrap);
+    }
 }
+
 .menu {
     margin-left: 10px;
     @media #{$medium} {
         margin-right: 50px;
     }
 }
+
 .menu-order {
     margin-bottom: 20px;
     display: inline-block;

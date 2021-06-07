@@ -5,9 +5,7 @@ header{
 }
 
 .topbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center ($flow: none);
   height: 70px;
   z-index: 10;
   background-color: #fff;
@@ -18,9 +16,6 @@ header{
         position: absolute;
         left: 25px;
         top: 20px;
-      }
-      &_image{
-        padding-right: 10px;
       }
 }
 

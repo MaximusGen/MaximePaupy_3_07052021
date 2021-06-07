@@ -1,4 +1,4 @@
 .topbar {
     height: 65px;
-    @include flex-center;
+    @include flex-center ($flow: none);
 }

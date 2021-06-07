@@ -7,8 +7,8 @@
 
 
 
-@mixin btn-white-space {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+@mixin btn-white-space ($text: ellipsis, $overflow: hidden, $space: nowrap) {
+    text-overflow: $text;
+    overflow: $overflow;
+    white-space: $space;
 }
