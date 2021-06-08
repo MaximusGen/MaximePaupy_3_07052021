@@ -8,11 +8,8 @@
     box-shadow: $btn-shadow;
     cursor: pointer;
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    animation: btn-effect 1s both;
+    @include display ($flow: row wrap, $justify: space-between);
+    animation: progressive-appearence  1s both;
     @media #{$medium} {
         width: 500px;
     }
@@ -91,11 +88,11 @@
               transform: scaleX(0);
     }
     100% {
-              transform: scaleX(-50px);
+              transform: scaleX(1);
     }
   }
 
-  @keyframes btn-effect {
+  @keyframes progressive-appearence  {
       from {
          
           transform: scale(0);

@@ -1,4 +1,4 @@
-@mixin flex-center ($display: flex, $align: center, $justify: center, $flow: column wrap){
+@mixin display ($display: flex, $align: center, $justify: center, $flow: column wrap){
     display: $display;
     align-items: $align ;
     justify-content: $justify;

@@ -1,73 +1,73 @@
 // Restaurant page , main
 
-main{
-    z-index: 10;
-    position: relative;
+main {
+	z-index: 10;
+	position: relative;
 }
 
-// Menu réservation 
+// Menu réservation
 
 .section-menus {
 	background-color: #f6f6f6;
 	border-radius: 45px 45px 0px 0px;
-    @include flex-center;
-    margin-top: -150px;
+	@include display;
+	margin-top: -150px;
 }
 
 .section-menus-restaurant {
-	@include flex-center ($justify: space-between, $flow: none);
-    font-family: $font-Shrikhand;
-    margin-top: 10px;
-    width: 100%;
+	@include display ($justify: space-between, $flow: row wrap);
+	font-family: $font-Shrikhand;
+	margin-top: 10px;
+	width: 100%;
 
-    &_title {
-    font-size: 1.70rem;
-    padding-left: 20px;
-    }
-    &_like {
-    padding-right: 35px;
-    }
+	&_title {
+		font-size: 1.70rem;
+		padding-left: 20px;
+	}
+	&_like {
+		padding-right: 35px;
+	}
 }
 
-.restaurant-menus{
-    @include flex-center ($justify: none, $align: none, $flow: row wrap);
-    @media only screen and (min-width:768px) and (max-width:1024px) {
-        @include flex-center ($justify: center, $align: center, $flow: row wrap);
-    }
+.restaurant-menus {
+	@include display ($align: flex-start, $flow: row wrap);
+	@media only screen and (min-width: 768px) and (max-width: 1024px) {
+		@include display ($justify: center, $align: center, $flow: row wrap);
+	}
 }
 
 .menu {
-    margin-left: 10px;
-    @media #{$medium} {
-        margin-right: 50px;
-    }
+	margin-left: 5px;
+	@media #{$medium} {
+		margin-right: 50px;
+	}
 }
 
 .menu-order {
-    margin-bottom: 20px;
-    display: inline-block;
-    position: relative;
+	margin-bottom: 20px;
+	display: inline-block;
+	position: relative;
 
-     &_title{
-        margin-bottom: 10px;
-        color: $color-fonts;
-        font-weight: normal
-    }
+	&_title {
+		margin-bottom: 10px;
+		color: $color-fonts;
+		font-weight: normal;
+	}
 
-    &_underscore {
-        width: 40px;
-        height: 5px;
-        background-color: $color-tertiary;
-    }
+	&_underscore {
+		width: 40px;
+		height: 5px;
+		background-color: $color-tertiary;
+	}
 }
 
-.restaurant-buton{
-    @include flex-center;
-    @extend %btn-gradient;
-    margin-top: 30px;
-    margin-bottom: 80px;
-    &:hover {
-        box-shadow: $btn-shadow-hover;
-        transform: scale(1.2);
-    }   
+.restaurant-buton {
+	@include display;
+	@extend %btn-gradient;
+	margin-top: 30px;
+	margin-bottom: 80px;
+	&:hover {
+		box-shadow: $btn-shadow-hover;
+		transform: scale(1.2);
+	}
 }
