@@ -15,7 +15,7 @@
     }
     &_header {
         margin: 10px 0px 5px 11px;
-        align-self: center;
+        align-self: $center;
         @include btn-white-space;
     }
     &_title
@@ -68,14 +68,12 @@
         }
     }
     .btn-menu_validation{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include display;
         animation: slide-left 0.5s ease ;
         transform-origin: right;
     }
     .btn-menu_price{
-       transition: 0.3s ease;
+       transition: 0.5s ease;
        padding-left: 20px;
       
     }

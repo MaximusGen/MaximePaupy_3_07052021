@@ -7,15 +7,5 @@
 @import 'Layout/header-page-menus';
 @import 'Layout/main-pages-menu';
 @import 'Layout/footer';
+@import 'Pages/restaurant-image';
 
-.restaurant-image {
-    width: 100%;
-    height: 450px;
-    &_img{
-        margin-top: -80px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-}
