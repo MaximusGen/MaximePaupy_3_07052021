@@ -1,59 +1,59 @@
 @import '../utils/variable';
 
 .btn-menu{
+    @include display ($flow: row wrap, $justify: space-between);
     width: 350px;
     height: 70px;
+    margin-bottom: 20px;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: $btn-shadow;
     cursor: pointer;
-    margin-bottom: 20px;
-    @include display ($flow: row wrap, $justify: space-between);
     animation: progressive-appearence  1s both;
     @media #{$medium} {
         width: 500px;
     }
     &_header {
-        margin: 10px 0px 5px 11px;
+        margin: 10px 0 5px 11px;
         align-self: $center;
         @include btn-white-space;
     }
     &_title
     {
         padding-bottom: 5px;
-        margin: 0px;
+        margin: 0;
         font-size: 1.125rem;
         @include btn-white-space;
     }
     
     &_description{
-        margin: 0px;
+        margin: 0;
         padding-bottom: 5px;
         font-size: 0.938rem;
         color: $color-fonts;
         @include btn-white-space;
     }
     &_price{
-        font-weight: bold;
         margin-top: 27px;
         padding-right: 20px;
+        font-weight: bold;
     }
     &_validation {
-        font-size: 1.45rem;
-        border-radius: 0px 15px 15px 0px;
+        display: none;
         text-align: $center;
-        line-height: 70px;
         width: 70px;
         height: 100%;
+        line-height: 70px;
+        font-size: 1.45rem;
+        border-radius: 0px 15px 15px 0px;
         background-color: $color-tertiary;
         color: #fff;
-        display: none;
         
     }
 }
 .menu-contents {
     margin-top: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 

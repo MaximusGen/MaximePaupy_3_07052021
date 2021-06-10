@@ -1,22 +1,22 @@
 .charters{
-    background: #353535;
     height: 200px;
+    background: #353535;
     color: #fff;
 }
 
 .charters-title {
     &_footer{
+        margin: 0 0 15px 30px;
+        padding-top: 20px;
         font-family: $font-Shrikhand;
         font-size: 1.25rem;
-        margin: 0px 0px 15px 30px;
-        padding-top: 20px;
     }
 }
 .charters-lines{
 
     margin-bottom: 30px;
     &_link {
-        margin: 0px 0px 10px 30px;
+        margin: 0 0 10px 30px;
     }
 }
  .icon-charters {

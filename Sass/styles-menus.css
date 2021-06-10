@@ -1,12 +1,12 @@
 .restaurant-buton {
+  text-align: center;
   width: 220px;
   height: 50px;
   border-radius: 32px;
+  -webkit-box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-  -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
-  text-align: center;
   color: #fff;
 }
 
@@ -48,14 +48,6 @@ body {
 }
 
 .btn-menu {
-  width: 350px;
-  height: 70px;
-  background-color: #fff;
-  border-radius: 15px;
-  -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,6 +61,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  width: 350px;
+  height: 70px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   -webkit-animation: progressive-appearence  1s both;
           animation: progressive-appearence  1s both;
 }
@@ -80,7 +80,7 @@ body {
 }
 
 .btn-menu_header {
-  margin: 10px 0px 5px 11px;
+  margin: 10px 0 5px 11px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -91,7 +91,7 @@ body {
 
 .btn-menu_title {
   padding-bottom: 5px;
-  margin: 0px;
+  margin: 0;
   font-size: 1.125rem;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -99,7 +99,7 @@ body {
 }
 
 .btn-menu_description {
-  margin: 0px;
+  margin: 0;
   padding-bottom: 5px;
   font-size: 0.938rem;
   color: #353535;
@@ -109,26 +109,26 @@ body {
 }
 
 .btn-menu_price {
-  font-weight: bold;
   margin-top: 27px;
   padding-right: 20px;
+  font-weight: bold;
 }
 
 .btn-menu_validation {
-  font-size: 1.45rem;
-  border-radius: 0px 15px 15px 0px;
+  display: none;
   text-align: center;
-  line-height: 70px;
   width: 70px;
   height: 100%;
+  line-height: 70px;
+  font-size: 1.45rem;
+  border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
   color: #fff;
-  display: none;
 }
 
 .menu-contents {
   margin-top: 10px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .btn-menu:hover {
@@ -274,28 +274,26 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  height: 70px;
-  z-index: 10;
-  background-color: #fff;
   position: relative;
+  z-index: 10;
+  height: 70px;
+  background-color: #fff;
 }
 
 .topbar_icon {
-  color: #000;
-  font-size: 1.75rem;
   position: absolute;
   left: 25px;
   top: 20px;
+  font-size: 1.75rem;
+  color: #000;
 }
 
 main {
-  z-index: 10;
   position: relative;
+  z-index: 10;
 }
 
 .section-menus {
-  background-color: #f6f6f6;
-  border-radius: 45px 45px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,6 +308,8 @@ main {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   margin-top: -150px;
+  border-radius: 45px 45px 0px 0px;
+  background-color: #f6f6f6;
 }
 
 .section-menus-restaurant {
@@ -326,9 +326,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  font-family: "Shrikhand", sans-serif;
-  margin-top: 10px;
   width: 100%;
+  margin-top: 10px;
+  font-family: "Shrikhand", sans-serif;
 }
 
 .section-menus-restaurant_title {
@@ -385,15 +385,15 @@ main {
 }
 
 .menu-order {
-  margin-bottom: 20px;
   display: inline-block;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .menu-order_title {
   margin-bottom: 10px;
-  color: #353535;
   font-weight: normal;
+  color: #353535;
 }
 
 .menu-order_underscore {
@@ -428,16 +428,16 @@ main {
 }
 
 .charters {
-  background: #353535;
   height: 200px;
+  background: #353535;
   color: #fff;
 }
 
 .charters-title_footer {
+  margin: 0 0 15px 30px;
+  padding-top: 20px;
   font-family: "Shrikhand", sans-serif;
   font-size: 1.25rem;
-  margin: 0px 0px 15px 30px;
-  padding-top: 20px;
 }
 
 .charters-lines {
@@ -445,7 +445,7 @@ main {
 }
 
 .charters-lines_link {
-  margin: 0px 0px 10px 30px;
+  margin: 0 0 10px 30px;
 }
 
 .icon-charters {
@@ -493,10 +493,10 @@ main {
 }
 
 .restaurant-image_img {
-  margin-top: -80px;
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin-top: -80px;
 }
 /*# sourceMappingURL=styles-menus.css.map */

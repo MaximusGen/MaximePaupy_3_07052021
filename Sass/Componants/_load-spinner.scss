@@ -1,8 +1,8 @@
 
 
 .loader {
-   position: fixed;
    @include display ($flow: row wrap);
+   position: fixed;
    height: 100%;
    width: 100%;
    visibility: hidden;
@@ -25,50 +25,50 @@
     &_2{
         width: 10px;
         height: 35px;
-        background-color: $color-tertiary;
         margin-left: 5px;   
+        background-color: $color-tertiary;
     }
     &_3{
         width: 10px;
         height: 35px;
-        background-color: $color-tertiary;
         margin-left:5px;
+        background-color: $color-tertiary;
     }
     &_4{
+        position: relative;
         width: 40px;
         height: 20px;
-        background-color: $color-tertiary;
-        position: relative;
         margin-top: 30px;
         right: 40px;
+        background-color: $color-tertiary;
         border-radius: 0 0 10px 10px;
     }
     &_5 {
+        position: relative;
         width: 15px;
         height: 100px;
-        background-color: $color-tertiary;
-        position: relative;
         top: 40px;
         right: 67px;
+        background-color: $color-tertiary;
     }
 }
 .plate {
+   display: flex;
+   align-items: center;
+   justify-content: center;
    width: 220px;
    height: 220px;
    border-radius: 50%;
    background-color: $color-fonts;
    border: 1px solid $color-secondary;
-   display: flex;
-   align-items: center;
-   justify-content: center;
 
    &_inside {
+       text-align: center;
        width: 180px;
        height: 180px;
        border-radius: 50%;
        border: 1px solid $color-secondary;
        color: #fff;
-       text-align: center;
        font-family: $font-Shrikhand;
    }
 }
@@ -86,8 +86,8 @@
     &_down {
         width: 20px;
         height: 50px;
-        background-color: $color-tertiary;
         margin-left: 4px;
+        background-color: $color-tertiary;
     }
 }
 
@@ -95,9 +95,9 @@
     position: absolute;
     text-align: center;
     color: $color-primary;
+    z-index: 50;
     font-size: 60px;
     font-weight: bold;
-    z-index: 50;
     font-family: $font-Shrikhand;
     text-shadow: 0 0 10px $color-primary;
     animation: title-scale 2s 1s ease-out;
