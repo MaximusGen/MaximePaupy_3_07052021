@@ -27,20 +27,25 @@ main {
 	&_like {
 		padding-right: 35px;
 	}
+	
 }
 
 .restaurant-menus {
 	@include display ($align: flex-start, $flow: row wrap);
+
 	@media only screen and (min-width: 768px) and (max-width: 1024px) {
 		@include display ($justify: center, $align: center, $flow: row wrap);
 	}
+
 }
 
 .menu {
 	margin-left: 5px;
+
 	@media #{$medium} {
 		margin-right: 50px;
 	}
+
 }
 
 .menu-order {
@@ -59,6 +64,7 @@ main {
 		height: 5px;
 		background-color: $color-tertiary;
 	}
+
 }
 
 .restaurant-buton {
@@ -66,6 +72,7 @@ main {
 	margin-top: 30px;
 	margin-bottom: 80px;
 	@extend %btn-gradient;
+
 	&:hover {
 		box-shadow: $btn-shadow-hover;
 		transform: scale(1.2);

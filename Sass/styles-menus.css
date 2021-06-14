@@ -3,11 +3,15 @@
   width: 220px;
   height: 50px;
   border-radius: 32px;
+  border: none;
   -webkit-box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
 }
 
 body {
@@ -32,7 +36,7 @@ body {
 
 .heart-full {
   position: absolute;
-  fill: url(#text-fill);
+  fill: url(#color-fill);
   stroke: none;
 }
 
@@ -169,7 +173,6 @@ body {
 .btn-menu:hover .btn-menu_price {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  padding-left: 20px;
 }
 
 @-webkit-keyframes slide-left {
@@ -196,34 +199,30 @@ body {
 
 @-webkit-keyframes progressive-appearence {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 0;
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    opacity: 1;
   }
 }
 
 @keyframes progressive-appearence {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 0;
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    opacity: 1;
   }
 }
 
 .opacity-2 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .opacity-3 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .opacity-4 {
@@ -490,13 +489,7 @@ main {
 .restaurant-image {
   width: 100%;
   height: 450px;
-}
-
-.restaurant-image_img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
-  height: 100%;
-  margin-top: -80px;
 }
 /*# sourceMappingURL=styles-menus.css.map */

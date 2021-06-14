@@ -10,22 +10,24 @@
     box-shadow: $btn-shadow;
     cursor: pointer;
     animation: progressive-appearence  1s both;
-    @media #{$medium} {
+
+    @media #{$medium}{
         width: 500px;
     }
-    &_header {
+
+    &_header{
         margin: 10px 0 5px 11px;
         align-self: $center;
         @include btn-white-space;
     }
-    &_title
-    {
+
+    &_title{
         padding-bottom: 5px;
         margin: 0;
         font-size: 1.125rem;
         @include btn-white-space;
     }
-    
+  
     &_description{
         margin: 0;
         padding-bottom: 5px;
@@ -33,12 +35,14 @@
         color: $color-fonts;
         @include btn-white-space;
     }
+
     &_price{
         margin-top: 27px;
         padding-right: 20px;
         font-weight: bold;
     }
-    &_validation {
+
+    &_validation{
         display: none;
         text-align: $center;
         width: 70px;
@@ -50,33 +54,39 @@
         color: #fff;
         
     }
+
 }
+
 .menu-contents {
     margin-top: 10px;
     margin-bottom: 0;
 }
 
-
-
+// Hover Button
 
 .btn-menu:hover {
      flex-wrap: nowrap;
+
     .btn-menu_header{
         width: 216px;
+
         @media #{$medium}{
             width: 390px;
         }
+
     }
+
     .btn-menu_validation{
         @include display;
         animation: slide-left 0.5s ease ;
         transform-origin: right;
     }
+
     .btn-menu_price{
        transition: 0.5s ease;
-       padding-left: 20px;
       
     }
+
 }
 
 
@@ -85,6 +95,7 @@
     0% {
               transform: scaleX(0);
     }
+    
     100% {
               transform: scaleX(1);
     }
@@ -93,35 +104,18 @@
   @keyframes progressive-appearence  {
       from {
          
-          transform: scale(0);
+          opacity: 0;;
       }
+
       to {
-          transform: scale(1);
+          opacity: 1;;
       }
   }
+   
+@for $i from 2 through 9 {
 
+      .opacity-#{$i}{
+          animation-delay: $i * 0.2s;
+      }
 
-  .opacity-2{
-      animation-delay: 0.2s;
-  }
-    .opacity-3{
-      animation-delay: 0.4s;
-  }
-    .opacity-4{
-      animation-delay: 0.8s;
-  }
-    .opacity-5{
-      animation-delay: 1s;
-  }
-    .opacity-6{
-      animation-delay: 1.2s;
-  }
-    .opacity-7{
-      animation-delay: 1.4s;
-  }
-  .opacity-8{
-      animation-delay: 1.6s;
-  }
-    .opacity-9{
-      animation-delay: 1.8s;
-  }
+}

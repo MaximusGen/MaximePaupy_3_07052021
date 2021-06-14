@@ -8,8 +8,8 @@
    visibility: hidden;
    animation: background-loader 3s linear;
    z-index: 60;
-
 }
+
 .floak {
     position: absolute;
     display: flex;
@@ -22,18 +22,21 @@
         height: 35px;
         background-color: $color-tertiary;
     }
+
     &_2{
         width: 10px;
         height: 35px;
         margin-left: 5px;   
         background-color: $color-tertiary;
     }
+
     &_3{
         width: 10px;
         height: 35px;
         margin-left:5px;
         background-color: $color-tertiary;
     }
+
     &_4{
         position: relative;
         width: 40px;
@@ -43,6 +46,7 @@
         background-color: $color-tertiary;
         border-radius: 0 0 10px 10px;
     }
+
     &_5 {
         position: relative;
         width: 15px;
@@ -51,7 +55,9 @@
         right: 67px;
         background-color: $color-tertiary;
     }
+
 }
+
 .plate {
    display: flex;
    align-items: center;
@@ -71,24 +77,28 @@
        color: #fff;
        font-family: $font-Shrikhand;
    }
+
 }
 
 .knife {
       margin-left: 5px;
       margin-top: 40px;
       animation: rotate-left 1s ease-out forwards;
+
     &_up {
         width: 25px;
         height: 100px;
         background-color: $color-tertiary;
         border-radius: 50px 0 0 0;
     }
+
     &_down {
         width: 20px;
         height: 50px;
         margin-left: 4px;
         background-color: $color-tertiary;
     }
+
 }
 
 .title-loader{
@@ -107,45 +117,55 @@
     from {
        transform: rotate(0deg)
     }
+
     to {
        transform: rotate(90deg)
        translate(0px,-130px);
     }
 }
+
 @keyframes rotate-left {
     from {
        transform: rotate(0deg)
     }
+
     to {
        transform: rotate(-90deg)
        translate(0px,-130px)
     }
 }
+
 @keyframes title-scale {
     0% {
          transform: scale(1);
          color: $color-primary;
     }
+
     100% {
          transform: scale(1.5);
          color: $color-fonts;
          text-shadow: 0 0 7px #fff900;
     }
 }
+
 @keyframes background-loader {
     0% {
         background-color:#000;
         visibility: visible;
     }
+
     25%{
         background-color:rgba(0, 0, 0, 0.750);
     }
+
     50%{
         background-color:rgba(0, 0, 0, 0.500);
     }
+
     75%{
         background-color:rgba(0, 0, 0, 0.250);
     }
+
     100% {
         background-color: rgba(0, 0, 0, 0.000);
     }

@@ -13,11 +13,12 @@
     }
 }
 .charters-lines{
-
     margin-bottom: 30px;
+
     &_link {
         margin: 0 0 10px 30px;
     }
+
 }
  .icon-charters {
      padding-right: $padding-icon;
@@ -27,9 +28,11 @@
 
     .charters-title{
         @include display;
+
         &_footer{
             font-size: 3rem;
         }
+        
     }
 
     .charters-lines{
