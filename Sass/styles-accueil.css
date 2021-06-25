@@ -237,15 +237,6 @@ body {
     background-color: #000;
     visibility: visible;
   }
-  25% {
-    background-color: rgba(0, 0, 0, 0.75);
-  }
-  50% {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  75% {
-    background-color: rgba(0, 0, 0, 0.25);
-  }
   100% {
     background-color: rgba(0, 0, 0, 0);
   }
@@ -255,15 +246,6 @@ body {
   0% {
     background-color: #000;
     visibility: visible;
-  }
-  25% {
-    background-color: rgba(0, 0, 0, 0.75);
-  }
-  50% {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  75% {
-    background-color: rgba(0, 0, 0, 0.25);
   }
   100% {
     background-color: rgba(0, 0, 0, 0);
