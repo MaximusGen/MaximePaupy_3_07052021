@@ -31,6 +31,7 @@ main {
 }
 
 .restaurant-menus {
+
 	@include display ($align: flex-start, $flow: row wrap);
 
 	@media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -40,12 +41,11 @@ main {
 }
 
 .menu {
-	margin-left: 5px;
+    margin-left: 5px;
 
 	@media #{$medium} {
 		margin-right: 50px;
 	}
-
 }
 
 .menu-order {

@@ -42,7 +42,7 @@
         font-weight: bold;
     }
 
-    &_validation{
+    &_check{
         display: none;
         text-align: $center;
         width: 70px;
@@ -76,15 +76,18 @@
 
     }
 
-    .btn-menu_validation{
+    .btn-menu_check{
         @include display;
         animation: slide-left 0.5s ease ;
         transform-origin: right;
-    }
 
+        .check-icon {
+            animation: rotate-icon 0.5s ease;
+        }
+    }
+    
     .btn-menu_price{
-       transition: 0.5s ease;
-      
+       transition: 0.5s ease; 
     }
 
 }
@@ -99,6 +102,16 @@
     100% {
               transform: scaleX(1);
     }
+  }
+
+  @keyframes rotate-icon {
+     0% {
+         transform: rotate(360deg);
+     }
+     100% {
+         transform: rotate(0);
+     }
+      
   }
 
   @keyframes progressive-appearence  {

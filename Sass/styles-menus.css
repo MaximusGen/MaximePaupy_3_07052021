@@ -119,7 +119,7 @@ body {
   font-weight: bold;
 }
 
-.btn-menu_validation {
+.btn-menu_check {
   display: none;
   text-align: center;
   width: 70px;
@@ -151,7 +151,7 @@ body {
   }
 }
 
-.btn-menu:hover .btn-menu_validation {
+.btn-menu:hover .btn-menu_check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,6 +169,11 @@ body {
           animation: slide-left 0.5s ease;
   -webkit-transform-origin: right;
           transform-origin: right;
+}
+
+.btn-menu:hover .btn-menu_check .check-icon {
+  -webkit-animation: rotate-icon 0.5s ease;
+          animation: rotate-icon 0.5s ease;
 }
 
 .btn-menu:hover .btn-menu_price {
@@ -195,6 +200,28 @@ body {
   100% {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes rotate-icon {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes rotate-icon {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 }
 

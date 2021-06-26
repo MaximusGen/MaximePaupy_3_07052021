@@ -24,12 +24,12 @@
             <img src="../logo/ohmyfood@2x.svg" alt="Logo ohmyfood" class="topbar_image">
         </div>
     </header>
-    <div class="restaurant-image"><img class="restaurant-image" src="../img/the_taste_palette.jpg"
-            alt="Un plat de poisson au restaurant le délice des sens">
+    <div class="restaurant-image"><img class="restaurant-image_img" src="../img/the_taste_palette.jpg"
+            alt="La palette du goût">
     </div>
     <main>
         <section class="section-menus">
-            <header class="section-menus-restaurant">
+            <div class="section-menus-restaurant">
                 <h1 class="section-menus-restaurant_title">Le délice des sens</h1>
                 <div class="section-menus-restaurant_like">
                     <svg class="heart heart-full" viewBox="-20 0 550 550" xml:space="preserve">
@@ -39,7 +39,7 @@
                             s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
                             C512,93.417,453.532,30,376,30z" />
                         <defs>
-                            <linearGradient id="color-fill">
+                            <linearGradient id="text-fill">
                                 <stop offset="0%" stop-color="#9356DC" />
                                 <stop offset="100%" stop-color="#FF79DA" />
                             </linearGradient>
@@ -51,10 +51,16 @@
                             c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
                             s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
                             C512,93.417,453.532,30,376,30z" />
+                        <defs>
+                            <linearGradient>
+                                <stop offset="0%" stop-color="#9356DC" />
+                                <stop offset="100%" stop-color="#FF79DA" />
+                            </linearGradient>
+                        </defs>
                     </svg>
                 </div>
-            </header>
-            <article class="restaurant-menus">
+            </div>
+            <div class="restaurant-menus">
                 <div class="menu">
                     <div class="menu-order">
                         <h4 class="menu-order_title">ENTREES</h4>
@@ -66,7 +72,7 @@
                             <p class="btn-menu_description">Assaisonné au yuzu</p>
                         </div>
                         <div class="btn-menu_price">25€</div>
-                        <div class="btn-menu_check"><i class="fas fa-check-circle check-icon"></i></div>
+                        <div class="btn-menu_validation"><i class="fas fa-check-circle"></i></div>
                     </div>
 
                     <div class="btn-menu opacity-2">
@@ -75,7 +81,7 @@
                             <p class="btn-menu_description">Et sa farandole de petits légumes</p>
                         </div>
                         <div class="btn-menu_price">35€</div>
-                        <div class="btn-menu_check"><i class="fas fa-check-circle check-icon"></i></div>
+                        <div class="btn-menu_validation"><i class="fas fa-check-circle"></i></div>
                     </div>
 
                     <div class="btn-menu opacity-3">
@@ -84,75 +90,75 @@
                             <p class="btn-menu_description">Aux truffes</p>
                         </div>
                         <div class="btn-menu_price">20€</div>
-                        <div class="btn-menu_check"><i class="fas fa-check-circle check-icon"></i></div>
+                        <div class="btn-menu_validation"><i class="fas fa-check-circle"></i></div>
                     </div>
                 </div>
-                <div class="menu">
+                <div class="menu"">
                     <div class=" menu-order">
-                        <h4 class="menu-order_title">PLATS</h4>
-                        <div class="menu-order_underscore"></div>
-                    </div>
-                    <div class="btn-menu opacity-4">
-                        <div class="btn-menu_header">
-                            <h4 class="btn-menu_title">Poulet rôti aux herbes de Provence</h4>
-                            <p class="btn-menu_description">Et sa crème de truffe
-                            </p>
-                        </div>
-                        <div class="btn-menu_price">40€</div>
-                        <div class="btn-menu_check"><i class="fas fa-check-circle check-icon"></i></div>
-                    </div>
-                    <div class="btn-menu opacity-5">
-                        <div class="btn-menu_header">
-                            <h4 class="btn-menu_title">Langouste rôtie</h4>
-                            <p class="btn-menu_description">Et ses légumes de saison</p>
-                        </div>
-                        <div class="btn-menu_price">35€</div>
-                        <div class="btn-menu_check"><i class="fas fa-check-circle check-icon"></i></div>
-                    </div>
-                    <div class="btn-menu opacity-6">
-                        <div class="btn-menu_header">
-                            <h4 class="btn-menu_title">Côte de boeuf Angus</h4>
-                            <p class="btn-menu_description">Et sa purée de panais
-                            </p>
-                        </div>
-                        <div class="btn-menu_price">44€</div>
-                        <div class="btn-menu_check"><i class="fas fa-check-circle check-icon"></i></div>
-                    </div>
+                    <h4 class="menu-order_title">PLATS</h4>
+                    <div class="menu-order_underscore"></div>
                 </div>
-                <div class="menu">
+                <div class="btn-menu opacity-4">
+                    <div class="btn-menu_header">
+                        <h4 class="btn-menu_title">Poulet rôti aux herbes de Provence</h4>
+                        <p class="btn-menu_description">Et sa crème de truffe
+                        </p>
+                    </div>
+                    <div class="btn-menu_price">40€</div>
+                    <div class="btn-menu_validation"><i class="fas fa-check-circle"></i></div>
+                </div>
+                <div class="btn-menu opacity-5">
+                    <div class="btn-menu_header">
+                        <h4 class="btn-menu_title">Langouste rôtie</h4>
+                        <p class="btn-menu_description">Et ses légumes de saison</p>
+                    </div>
+                    <div class="btn-menu_price">35€</div>
+                    <div class="btn-menu_validation"><i class="fas fa-check-circle"></i></div>
+                </div>
+                <div class="btn-menu opacity-6">
+                    <div class="btn-menu_header">
+                        <h4 class="btn-menu_title">Côte de boeuf Angus</h4>
+                        <p class="btn-menu_description">Et sa purée de panais
+                        </p>
+                    </div>
+                    <div class="btn-menu_price">44€</div>
+                    <div class="btn-menu_validation"><i class="fas fa-check-circle"></i></div>
+                </div>
+            </div>
+            <div class="menu"">
                     <div class=" menu-order">
-                        <h4 class="menu-order_title">DESSERTS</h4>
-                        <div class="menu-order_underscore"></div>
-                    </div>
-                    <div class="btn-menu opacity-7">
-                        <div class="btn-menu_header">
-                            <h4 class="btn-menu_title">Farandole de desserts</h4>
-                            <p class="btn-menu_description">Du chef</p>
-                        </div>
-                        <div class="btn-menu_price">18€</div>
-                        <div class="btn-menu_check"><i class="fas fa-check-circle check-icon"></i></div>
-                    </div>
-                    <div class="btn-menu opacity-8">
-                        <div class="btn-menu_header">
-                            <h4 class="btn-menu_title">Crème brulée</h4>
-                            <p class="btn-menu_description">Revisitée</p>
-                        </div>
-                        <div class="btn-menu_price">22€</div>
-                        <div class="btn-menu_check"><i class="fas fa-check-circle check-icon"></i></div>
-                    </div>
-                    <div class="btn-menu opacity-9">
-                        <div class="btn-menu_header">
-                            <h4 class="btn-menu_title">Tiramisu</h4>
-                            <p class="btn-menu_description">À la noisette</p>
-                        </div>
-                        <div class="btn-menu_price">23€</div>
-                        <div class="btn-menu_check"><i class="fas fa-check-circle check-icon"></i></div>
-                    </div>
+                <h4 class="menu-order_title">DESSERTS</h4>
+                <div class="menu-order_underscore"></div>
+            </div>
+            <div class="btn-menu opacity-7">
+                <div class="btn-menu_header">
+                    <h4 class="btn-menu_title">Farandole de desserts</h4>
+                    <p class="btn-menu_description">Du chef</p>
                 </div>
-            </article>
-            <button type="button" class="restaurant-buton">
-                Commander
-            </button>
+                <div class="btn-menu_price">18€</div>
+                <div class="btn-menu_validation"><i class="fas fa-check-circle"></i></div>
+            </div>
+            <div class="btn-menu opacity-8">
+                <div class="btn-menu_header">
+                    <h4 class="btn-menu_title">Crème brulée</h4>
+                    <p class="btn-menu_description">Revisitée</p>
+                </div>
+                <div class="btn-menu_price">22€</div>
+                <div class="btn-menu_validation"><i class="fas fa-check-circle"></i></div>
+            </div>
+            <div class="btn-menu opacity-9">
+                <div class="btn-menu_header">
+                    <h4 class="btn-menu_title">Tiramisu</h4>
+                    <p class="btn-menu_description">À la noisette</p>
+                </div>
+                <div class="btn-menu_price">23€</div>
+                <div class="btn-menu_validation"><i class="fas fa-check-circle"></i></div>
+            </div>
+            </div>
+            </div>
+            <div class="restaurant-buton">
+                <p>Commander</p>
+            </div>
         </section>
     </main>
     <footer>
