@@ -1,118 +1,87 @@
 @import '../utils/variable';
 
 .btn-menu{
-    @include display ($flow: row wrap, $justify: space-between);
     width: 350px;
     height: 70px;
-    margin-bottom: 20px;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: $btn-shadow;
     cursor: pointer;
-    animation: progressive-appearence  1s both;
-
-    @media #{$medium}{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    animation: progressive-appearence 1s both;
+    overflow: hidden;
+    @media #{$medium} {
         width: 500px;
     }
-
-    &_header{
-        margin: 10px 0 5px 11px;
-        align-self: $center;
+    &_header {
+        margin: 10px 0px 5px 11px;
+        align-self: center;
         @include btn-white-space;
+        width: 260px;
+        @media #{$medium}{
+            width: 390px;
+        }
     }
-
-    &_title{
+    &_title
+    {
         padding-bottom: 5px;
-        margin: 0;
+        margin: 0px;
         font-size: 1.125rem;
         @include btn-white-space;
     }
-  
+    
     &_description{
-        margin: 0;
+        margin: 0px;
         padding-bottom: 5px;
         font-size: 0.938rem;
         color: $color-fonts;
         @include btn-white-space;
     }
-
     &_price{
-        margin-top: 27px;
-        padding-right: 20px;
         font-weight: bold;
+        margin-top: 27px;
+        transition: 400ms;
     }
-
-    &_check{
-        display: none;
-        text-align: $center;
-        width: 70px;
-        height: 100%;
-        line-height: 70px;
+    &_check {
+        display: block;
+        margin-right: -70px;
+        transition: 400ms;
         font-size: 1.45rem;
         border-radius: 0px 15px 15px 0px;
+        text-align: $center;
+        line-height: 70px;
+        width: 70px;
+        height: 100%;
         background-color: $color-tertiary;
-        color: #fff;
-        
+        color: #fff;      
     }
-
 }
 
 .menu-contents {
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
-
-// Hover Button
 
 .btn-menu:hover {
      flex-wrap: nowrap;
 
-    .btn-menu_header{
-        width: 216px;
-
-        @media #{$medium}{
-            width: 390px;
-        }
-
-    }
-
-    .btn-menu_check{
-        @include display;
-        animation: slide-left 0.5s ease ;
-        transform-origin: right;
-
+    .btn-menu_check {
+        margin-right: 0;
+        transition: 0.5s ease-in-out;
         .check-icon {
-            animation: rotate-icon 0.5s ease;
+            transform:  rotate(360deg);
+            transition: transform 500ms ease-in-out;
         }
     }
-    
     .btn-menu_price{
-       transition: 0.5s ease; 
+        margin-right: 10px;
+        transition: margin-right 500ms ease-in-out;
     }
-
 }
-
-
-
-  @keyframes slide-left {
-    0% {
-              transform: scaleX(0);
-    }
-    
-    100% {
-              transform: scaleX(1);
-    }
-  }
-
-  @keyframes rotate-icon {
-     0% {
-         transform: rotate(360deg);
-     }
-     100% {
-         transform: rotate(0);
-     }
-      
-  }
 
   @keyframes progressive-appearence  {
       from {
