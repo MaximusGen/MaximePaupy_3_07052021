@@ -131,7 +131,7 @@ span {
 
 }
 .restaurant-card-flex {
-	@include display ($justify: space-around, $flow: row wrap);
+	@include display ($justify: $center, $flow: row wrap);
 	padding-top: 30px;
 }
 .restaurant-card {
@@ -141,6 +141,7 @@ span {
 	border-radius: 15px;
 	box-shadow: $btn-shadow;
 	margin-bottom: 20px;
+	margin-right: 30px;
 
 	@media #{$medium} {
 		width: 400px;
